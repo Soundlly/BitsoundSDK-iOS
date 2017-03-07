@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BitsoundSampleForSwift
 //
-//  Created by wonje-soundlly on 2017. 2. 1..
+//  Created by wonje-soundlly on 2017. 3. 7..
 //  Copyright © 2017년 wonje-soundlly. All rights reserved.
 //
 

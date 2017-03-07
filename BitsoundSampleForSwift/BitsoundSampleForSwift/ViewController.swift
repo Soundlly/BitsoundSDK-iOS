@@ -2,9 +2,10 @@
 //  ViewController.swift
 //  BitsoundSampleForSwift
 //
-//  Created by wonje-soundlly on 2017. 2. 1..
+//  Created by wonje-soundlly on 2017. 3. 7..
 //  Copyright © 2017년 wonje-soundlly. All rights reserved.
 //
+
 
 import UIKit
 
@@ -13,7 +14,7 @@ import AudioToolbox
 import SafariServices
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet var startDetectWithContentsAssistantTrueButton: UIButton!
     
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
         
         // init with app key
         
-//        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
+        //        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
         
         BitsoundReceiver.sharedInstance().initWithAppKey("2af56e31-d2dd-40ef-80b3-d9e505759e4f")
         
@@ -33,21 +34,21 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     
     
     @IBAction func startDetectWithContentsAssistant(_ sender: AnyObject?) {
-    
+        
         var contentsAssistant = false
         
         if let button = sender as? UIButton {
             if button == self.startDetectWithContentsAssistantTrueButton {
-            
+                
                 contentsAssistant = true;
             }
             
@@ -59,10 +60,10 @@ class ViewController: UIViewController {
         BitsoundReceiver.sharedInstance().startDetect(withContentsAssistant: contentsAssistant) { (detectResult: BitsoundReceiverDetectResult) in
             
             if detectResult == BitsoundReceiverDetectResult.success {
-            
+                
                 // 신호 감지 시작 성공적.
                 self.showMessage(type: TSMessageNotificationType.success, message: self.detectResultToMsg(result: detectResult))
-            
+                
             } else {
                 
                 // 신호 감지 시작 실패시 아래와 같은 종류의 코드가 반환됩니다.
@@ -76,16 +77,16 @@ class ViewController: UIViewController {
                 self.showMessage(type: TSMessageNotificationType.error, message: self.detectResultToMsg(result: detectResult))
                 
                 // mic. permission denied -> getScheduledContents (광고 스케쥴 조회)
-//                if detectResult == BitsoundReceiverDetectResult.micPermissionDenied {
-//                
-//                    BitsoundReceiver.sharedInstance().getScheduledContents()
-//                    
-//                    // user가 mic. permission denied를 한 경우, 그에 대한 로깅.
-//                    BitsoundReceiver.sharedInstance().sendCustomLog(["micPerm" : false])
-//                    
-//                }
+                //                if detectResult == BitsoundReceiverDetectResult.micPermissionDenied {
+                //
+                //                    BitsoundReceiver.sharedInstance().getScheduledContents()
+                //
+                //                    // user가 mic. permission denied를 한 경우, 그에 대한 로깅.
+                //                    BitsoundReceiver.sharedInstance().sendCustomLog(["micPerm" : false])
+                //
+                //                }
                 
-            
+                
             }
         }
         
@@ -112,10 +113,10 @@ class ViewController: UIViewController {
     }
     
     
- 
+    
     // MARK: - private
     func showMessage(type: TSMessageNotificationType, message: String) {
-    
+        
         TSMessage.showNotification(in: self.navigationController,
                                    title: "Bitsound",
                                    subtitle: message,
@@ -124,16 +125,16 @@ class ViewController: UIViewController {
                                    duration: 1.4,
                                    callback: nil,
                                    buttonTitle: nil,
-                                   buttonCallback: { 
+                                   buttonCallback: {
                                     
                                     print("User tapped the button");
-                                    },
+        },
                                    at: TSMessageNotificationPosition.top,
                                    canBeDismissedByUser: true)
     }
     
     func detectResultToMsg(result: BitsoundReceiverDetectResult) -> String {
-    
+        
         var msg = ""
         
         switch result {
@@ -155,7 +156,7 @@ class ViewController: UIViewController {
     }
     
     func resultForInitToMsg(result: BitsoundReceiverInitResult) -> String {
-    
+        
         var msg = ""
         
         switch result {
@@ -180,7 +181,7 @@ class ViewController: UIViewController {
     }
     
     func resultToMsg(result: BitsoundReceiverResult) -> String {
-    
+        
         var msg = ""
         
         switch result {
@@ -192,7 +193,7 @@ class ViewController: UIViewController {
             
         case .invalidBeacon:    //  다른 신호
             msg = "invalid beacon"
-        
+            
         case .networkError:
             msg = "network error"
             
@@ -208,14 +209,14 @@ class ViewController: UIViewController {
 
 // MARK: - BitsoundReceiverDelegate
 extension ViewController: BitsoundReceiverDelegate {
-
+    
     // init 결과
     func receiverDidReceive(_ initResult: BitsoundReceiverInitResult, error: Error?) {
         
         if initResult == BitsoundReceiverInitResult.success {
             
             self.showMessage(type: TSMessageNotificationType.success, message: self.resultForInitToMsg(result: initResult))
-    
+            
             
             // BitsoundShaking set delegate
             BitsoundShaking.sharedInstance().delegate = self
@@ -226,7 +227,7 @@ extension ViewController: BitsoundReceiverDelegate {
             
             self.showMessage(type: TSMessageNotificationType.error, message: self.resultForInitToMsg(result: initResult))
         }
-    
+        
         
     }
     
@@ -235,28 +236,28 @@ extension ViewController: BitsoundReceiverDelegate {
     func receiverDidReceive(_ result: BitsoundReceiverResult, contents: BitsoundContentsModel?) {
         
         if result == .success {
-        
+            
             self.showMessage(type: TSMessageNotificationType.success, message: self.resultToMsg(result: result))
             
             if let unwrappedUrlString = contents?.getStrValue("url"), let unwrappedName = contents?.name, let unwrappedComment = contents?.getStrValue("comment") {
-            
+                
                 print("contents name : \(unwrappedName), comment : \(unwrappedComment)")
                 
                 if #available(iOS 9.0, *) {
-                
+                    
                     let safariViewController = SFSafariViewController(url: URL(string: unwrappedUrlString)!)
-                    self.present(safariViewController, animated: true, completion: { 
+                    self.present(safariViewController, animated: true, completion: {
                         
                     })
                 } else {
-                
+                    
                     UIApplication.shared.openURL(URL(string: unwrappedUrlString)!)
                 }
                 
             }
             
         } else {
-        
+            
             self.showMessage(type: TSMessageNotificationType.error, message: self.resultToMsg(result: result))
             
         }
@@ -265,7 +266,7 @@ extension ViewController: BitsoundReceiverDelegate {
     
     // start detect 되었다는 noti.
     func receiverDidStartDetect() {
-     
+        
         self.showMessage(type: TSMessageNotificationType.message, message: "did start detect")
     }
     
@@ -279,7 +280,7 @@ extension ViewController: BitsoundReceiverDelegate {
 
 // MARK: - BitsoundShakingDelegate
 extension ViewController: BitsoundShakingDelegate {
-
+    
     // shaking detect 되었다는 noti.
     func shakingDidDetect() {
         
@@ -294,7 +295,7 @@ extension ViewController: BitsoundShakingDelegate {
         BitsoundReceiver.sharedInstance().startDetect(withContentsAssistant: false) { (detectResult: BitsoundReceiverDetectResult) in
             
             if detectResult == BitsoundReceiverDetectResult.success {
-        
+                
                 // 신호 감지 시작 성공적.
                 
                 self.showMessage(type: TSMessageNotificationType.success, message: self.detectResultToMsg(result: detectResult))
@@ -306,22 +307,21 @@ extension ViewController: BitsoundShakingDelegate {
                  *	BitsoundReceiverDetectAlreadyStarted, // 이미 실행중임(동시에 안됨)
                  *	BitsoundReceiverDetectNotInitialized, // SDK가 초기화 되지 않음
                  */
-            
+                
                 self.showMessage(type: TSMessageNotificationType.error, message: self.detectResultToMsg(result: detectResult))
             }
             
             
             // mic. permission denied -> getScheduledContents (광고 스케쥴 조회)
-//            if detectResult == BitsoundReceiverDetectResult.micPermissionDenied {
-//                
-//                BitsoundReceiver.sharedInstance().getScheduledContents()
-//                
-//                // user가 mic. permission denied를 한 경우, 그에 대한 로깅.
-//                BitsoundReceiver.sharedInstance().sendCustomLog(["micPerm" : false])
-//            }
+            //            if detectResult == BitsoundReceiverDetectResult.micPermissionDenied {
+            //
+            //                BitsoundReceiver.sharedInstance().getScheduledContents()
+            //                
+            //                // user가 mic. permission denied를 한 경우, 그에 대한 로깅.
+            //                BitsoundReceiver.sharedInstance().sendCustomLog(["micPerm" : false])
+            //            }
             
         }
     }
 }
-
 

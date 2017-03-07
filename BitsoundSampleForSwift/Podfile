@@ -1,0 +1,5 @@
+target 'BitsoundSampleForSwift' do
+  pod 'TSMessages'
+end
+
+use_frameworks!

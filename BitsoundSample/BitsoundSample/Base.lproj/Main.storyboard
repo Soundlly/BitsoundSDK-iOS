@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ldg-oe-Zoy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bitsound sample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-vo-jzG">
+                                <rect key="frame" x="52" y="125" width="272" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="startDetectWithContentsAssistant(YES)"/>
+                                <connections>
+                                    <action selector="startDetectWithContentsAssistant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TPU-dC-ZLA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="car-Iv-x5H">
+                                <rect key="frame" x="147" y="257" width="82" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="Stop Detect"/>
+                                <connections>
+                                    <action selector="stopDetect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1o-XQ-kUu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tUK-IU-Sen">
+                                <rect key="frame" x="141" y="332" width="92" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="Enable Shake"/>
+                                <connections>
+                                    <action selector="enableShake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DwA-hh-jus"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufT-wz-NsH">
+                                <rect key="frame" x="139" y="398" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="Disable Shake"/>
+                                <connections>
+                                    <action selector="disableShake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cvw-RA-SdY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv6-sl-4Wm">
+                                <rect key="frame" x="54" y="191" width="267" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="startDetectWithContentsAssistant(NO)"/>
+                                <connections>
+                                    <action selector="startDetectWithContentsAssistant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSm-bq-waU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tUK-IU-Sen" firstAttribute="centerX" secondItem="ufT-wz-NsH" secondAttribute="centerX" id="26v-hP-soj"/>
+                            <constraint firstItem="qjP-vo-jzG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="BwP-um-ZXV"/>
+                            <constraint firstItem="Gv6-sl-4Wm" firstAttribute="top" secondItem="qjP-vo-jzG" secondAttribute="bottom" constant="36" id="G8h-GM-TJ0"/>
+                            <constraint firstItem="tUK-IU-Sen" firstAttribute="top" secondItem="car-Iv-x5H" secondAttribute="bottom" constant="45" id="HIi-vX-yIv"/>
+                            <constraint firstItem="qjP-vo-jzG" firstAttribute="centerX" secondItem="Gv6-sl-4Wm" secondAttribute="centerX" id="MJH-JR-pXO"/>
+                            <constraint firstItem="Gv6-sl-4Wm" firstAttribute="centerX" secondItem="tUK-IU-Sen" secondAttribute="centerX" id="MLJ-Br-mCs"/>
+                            <constraint firstItem="Gv6-sl-4Wm" firstAttribute="centerX" secondItem="car-Iv-x5H" secondAttribute="centerX" id="cTj-I6-T1e"/>
+                            <constraint firstItem="car-Iv-x5H" firstAttribute="top" secondItem="Gv6-sl-4Wm" secondAttribute="bottom" constant="36" id="gjD-2A-hHd"/>
+                            <constraint firstItem="tUK-IU-Sen" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oXx-pG-JVH"/>
+                            <constraint firstItem="ufT-wz-NsH" firstAttribute="top" secondItem="tUK-IU-Sen" secondAttribute="bottom" constant="36" id="wqh-IQ-CVN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Bitsound sample" id="Ceu-LV-xXV"/>
+                    <connections>
+                        <outlet property="startDetectWithContentsAssistantYESButton" destination="qjP-vo-jzG" id="mI8-vH-xUF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="183" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="of7-eq-Baf">
+            <objects>
+                <navigationController id="ldg-oe-Zoy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HuZ-Dc-XU8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="17Z-Pp-oKM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="em2-iu-qGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="139"/>
+        </scene>
+    </scenes>
+</document>

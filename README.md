@@ -54,12 +54,9 @@ Cocoapods이 설치되어 있지 않다면, 다음의 가이드(https://guides.c
 
 ## Configuraion
 > iOS 10 변경 사항
-> 기존의 optional이던 NSMicrophoneUsageDescription이 iOS 10으로 업데이트 되면서 필수 항목으로 변경되었습니다. 이 내용은 mic. permission alert 창 노출시 보여지는 문구입니다. 다음의 2가지 방법 중 한가지를 선택해서 추가합니다.
+> 기존의 optional이던 NSMicrophoneUsageDescription이 iOS 10으로 업데이트 되면서 필수 항목으로 변경되었습니다. 이 내용은 mic. permission alert 창 노출시 보여지는 문구입니다.
 
-> 방법 1 : Xcode에서 Project의 .plist 파일을 클릭하여, GUI에서 추가합니다.
-> [![N|Bitsound](https://files.readme.io/b6890f3-_2017-02-28__3.33.56.png)]
-
-> 방법 2 : Xcode에서 Project의 .plist 파일을 보조 클릭하고 Open As -> Source Code를 선택하여, 다음의 XML 코드를 추가합니다.
+> Xcode에서 Project의 .plist 파일을 보조 클릭하고 Open As -> Source Code를 선택하여, 다음의 XML 코드를 추가합니다.
 > ```sh
 > <?xml version="1.0" encoding="UTF-8"?>
 > <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

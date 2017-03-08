@@ -12,7 +12,7 @@
 #import <BitsoundReceiver/BitsoundReceiver.h>
 #import <BitsoundShaking/BitsoundShaking.h>
 
-#import <TSMessages/TSMessage.h>
+#import <RMessage/RMessage.h>
 
 #endif /* BitsoundSampleForSwift_Bridging_Header_h */
 

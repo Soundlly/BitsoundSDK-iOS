@@ -1,5 +1,3 @@
 target 'BitsoundSampleForSwift' do
-  pod 'TSMessages'
+  pod 'RMessage'
 end
-
-use_frameworks!

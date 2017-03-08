@@ -7,81 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		039D059DD6D5D14346488554 /* Pods_BitsoundSampleForSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD12C435D517BFEAD29BD8E6 /* Pods_BitsoundSampleForSwift.framework */; };
-		51203F0E1E6EB89E00C4C041 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51203F0D1E6EB89E00C4C041 /* AppDelegate.swift */; };
-		51203F101E6EB89E00C4C041 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51203F0F1E6EB89E00C4C041 /* ViewController.swift */; };
-		51203F131E6EB89E00C4C041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51203F111E6EB89E00C4C041 /* Main.storyboard */; };
-		51203F151E6EB89E00C4C041 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51203F141E6EB89E00C4C041 /* Assets.xcassets */; };
-		51203F181E6EB89E00C4C041 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51203F161E6EB89E00C4C041 /* LaunchScreen.storyboard */; };
-		51203F231E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51203F221E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.swift */; };
-		51203F2E1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51203F2D1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.swift */; };
-		51203F3D1E6EB8EC00C4C041 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51203F3C1E6EB8EC00C4C041 /* libstdc++.tbd */; };
-		51203F401E6EB8FD00C4C041 /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51203F3E1E6EB8FD00C4C041 /* BitsoundReceiver.framework */; };
-		51203F411E6EB8FD00C4C041 /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51203F3F1E6EB8FD00C4C041 /* BitsoundShaking.framework */; };
-		51203F441E6EBA9E00C4C041 /* TSMessagesDefaultDesign.json in Resources */ = {isa = PBXBuildFile; fileRef = 51203F431E6EBA9E00C4C041 /* TSMessagesDefaultDesign.json */; };
+		513891701E6FE68A00F2CDAE /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5138916F1E6FE68A00F2CDAE /* libstdc++.tbd */; };
+		513891731E6FE69600F2CDAE /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513891711E6FE69600F2CDAE /* BitsoundReceiver.framework */; };
+		513891741E6FE69600F2CDAE /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 513891721E6FE69600F2CDAE /* BitsoundShaking.framework */; };
+		515BD78F1E6FDF0F001C6290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515BD78E1E6FDF0F001C6290 /* AppDelegate.swift */; };
+		515BD7911E6FDF0F001C6290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515BD7901E6FDF0F001C6290 /* ViewController.swift */; };
+		515BD7941E6FDF0F001C6290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515BD7921E6FDF0F001C6290 /* Main.storyboard */; };
+		515BD7961E6FDF0F001C6290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515BD7951E6FDF0F001C6290 /* Assets.xcassets */; };
+		515BD7991E6FDF0F001C6290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515BD7971E6FDF0F001C6290 /* LaunchScreen.storyboard */; };
+		515BD7A41E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515BD7A31E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift */; };
+		515BD7AF1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515BD7AE1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift */; };
+		DF18D51F8BEE9F43B57D3996 /* libPods-BitsoundSampleForSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1632000225EEF0641D9FDA9B /* libPods-BitsoundSampleForSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		51203F1F1E6EB89E00C4C041 /* PBXContainerItemProxy */ = {
+		515BD7A01E6FDF0F001C6290 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51203F021E6EB89E00C4C041 /* Project object */;
+			containerPortal = 515BD7831E6FDF0F001C6290 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 51203F091E6EB89E00C4C041;
+			remoteGlobalIDString = 515BD78A1E6FDF0F001C6290;
 			remoteInfo = BitsoundSampleForSwift;
 		};
-		51203F2A1E6EB89E00C4C041 /* PBXContainerItemProxy */ = {
+		515BD7AB1E6FDF10001C6290 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 51203F021E6EB89E00C4C041 /* Project object */;
+			containerPortal = 515BD7831E6FDF0F001C6290 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 51203F091E6EB89E00C4C041;
+			remoteGlobalIDString = 515BD78A1E6FDF0F001C6290;
 			remoteInfo = BitsoundSampleForSwift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		51203F0A1E6EB89E00C4C041 /* BitsoundSampleForSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitsoundSampleForSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		51203F0D1E6EB89E00C4C041 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51203F0F1E6EB89E00C4C041 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		51203F121E6EB89E00C4C041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		51203F141E6EB89E00C4C041 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51203F171E6EB89E00C4C041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		51203F191E6EB89E00C4C041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51203F1E1E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoundSampleForSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		51203F221E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftTests.swift; sourceTree = "<group>"; };
-		51203F241E6EB89E00C4C041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51203F291E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoundSampleForSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		51203F2D1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftUITests.swift; sourceTree = "<group>"; };
-		51203F2F1E6EB89E00C4C041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51203F3C1E6EB8EC00C4C041 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
-		51203F3E1E6EB8FD00C4C041 /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
-		51203F3F1E6EB8FD00C4C041 /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
-		51203F421E6EB99B00C4C041 /* BitsoundSampleForSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BitsoundSampleForSwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		51203F431E6EBA9E00C4C041 /* TSMessagesDefaultDesign.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = TSMessagesDefaultDesign.json; path = Pods/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json; sourceTree = "<group>"; };
-		763F893362283E6E02015F77 /* Pods-BitsoundSampleForSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSampleForSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift.release.xcconfig"; sourceTree = "<group>"; };
-		BD12C435D517BFEAD29BD8E6 /* Pods_BitsoundSampleForSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitsoundSampleForSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB9D7C575D163ED58A0DD6F /* Pods-BitsoundSampleForSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSampleForSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		1632000225EEF0641D9FDA9B /* libPods-BitsoundSampleForSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitsoundSampleForSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36DB9419A9355FADE37F4CC8 /* Pods-BitsoundSampleForSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSampleForSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift.release.xcconfig"; sourceTree = "<group>"; };
+		5138916D1E6FE65300F2CDAE /* BitsoundSampleForSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BitsoundSampleForSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		5138916F1E6FE68A00F2CDAE /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		513891711E6FE69600F2CDAE /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
+		513891721E6FE69600F2CDAE /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
+		515BD78B1E6FDF0F001C6290 /* BitsoundSampleForSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitsoundSampleForSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		515BD78E1E6FDF0F001C6290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		515BD7901E6FDF0F001C6290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		515BD7931E6FDF0F001C6290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		515BD7951E6FDF0F001C6290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		515BD7981E6FDF0F001C6290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		515BD79A1E6FDF0F001C6290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515BD79F1E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoundSampleForSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		515BD7A31E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftTests.swift; sourceTree = "<group>"; };
+		515BD7A51E6FDF0F001C6290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515BD7AA1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoundSampleForSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		515BD7AE1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftUITests.swift; sourceTree = "<group>"; };
+		515BD7B01E6FDF10001C6290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		729EDDFC8BA84B4251119779 /* Pods-BitsoundSampleForSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSampleForSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		51203F071E6EB89E00C4C041 /* Frameworks */ = {
+		515BD7881E6FDF0F001C6290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51203F411E6EB8FD00C4C041 /* BitsoundShaking.framework in Frameworks */,
-				51203F3D1E6EB8EC00C4C041 /* libstdc++.tbd in Frameworks */,
-				51203F401E6EB8FD00C4C041 /* BitsoundReceiver.framework in Frameworks */,
-				039D059DD6D5D14346488554 /* Pods_BitsoundSampleForSwift.framework in Frameworks */,
+				513891741E6FE69600F2CDAE /* BitsoundShaking.framework in Frameworks */,
+				513891701E6FE68A00F2CDAE /* libstdc++.tbd in Frameworks */,
+				513891731E6FE69600F2CDAE /* BitsoundReceiver.framework in Frameworks */,
+				DF18D51F8BEE9F43B57D3996 /* libPods-BitsoundSampleForSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51203F1B1E6EB89E00C4C041 /* Frameworks */ = {
+		515BD79C1E6FDF0F001C6290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51203F261E6EB89E00C4C041 /* Frameworks */ = {
+		515BD7A71E6FDF10001C6290 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,94 +89,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51203F011E6EB89E00C4C041 = {
+		46B1D9879822D58C9A10A941 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				51203F431E6EBA9E00C4C041 /* TSMessagesDefaultDesign.json */,
-				51203F421E6EB99B00C4C041 /* BitsoundSampleForSwift-Bridging-Header.h */,
-				51203F0C1E6EB89E00C4C041 /* BitsoundSampleForSwift */,
-				51203F211E6EB89E00C4C041 /* BitsoundSampleForSwiftTests */,
-				51203F2C1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests */,
-				51203F0B1E6EB89E00C4C041 /* Products */,
-				51203F3B1E6EB8EC00C4C041 /* Frameworks */,
-				8C43187BDF996EA7FEAB7435 /* Pods */,
+				729EDDFC8BA84B4251119779 /* Pods-BitsoundSampleForSwift.debug.xcconfig */,
+				36DB9419A9355FADE37F4CC8 /* Pods-BitsoundSampleForSwift.release.xcconfig */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		51203F0B1E6EB89E00C4C041 /* Products */ = {
+		5138916E1E6FE68A00F2CDAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51203F0A1E6EB89E00C4C041 /* BitsoundSampleForSwift.app */,
-				51203F1E1E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.xctest */,
-				51203F291E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		51203F0C1E6EB89E00C4C041 /* BitsoundSampleForSwift */ = {
-			isa = PBXGroup;
-			children = (
-				51203F0D1E6EB89E00C4C041 /* AppDelegate.swift */,
-				51203F0F1E6EB89E00C4C041 /* ViewController.swift */,
-				51203F111E6EB89E00C4C041 /* Main.storyboard */,
-				51203F141E6EB89E00C4C041 /* Assets.xcassets */,
-				51203F161E6EB89E00C4C041 /* LaunchScreen.storyboard */,
-				51203F191E6EB89E00C4C041 /* Info.plist */,
-			);
-			path = BitsoundSampleForSwift;
-			sourceTree = "<group>";
-		};
-		51203F211E6EB89E00C4C041 /* BitsoundSampleForSwiftTests */ = {
-			isa = PBXGroup;
-			children = (
-				51203F221E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.swift */,
-				51203F241E6EB89E00C4C041 /* Info.plist */,
-			);
-			path = BitsoundSampleForSwiftTests;
-			sourceTree = "<group>";
-		};
-		51203F2C1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests */ = {
-			isa = PBXGroup;
-			children = (
-				51203F2D1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.swift */,
-				51203F2F1E6EB89E00C4C041 /* Info.plist */,
-			);
-			path = BitsoundSampleForSwiftUITests;
-			sourceTree = "<group>";
-		};
-		51203F3B1E6EB8EC00C4C041 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				51203F3E1E6EB8FD00C4C041 /* BitsoundReceiver.framework */,
-				51203F3F1E6EB8FD00C4C041 /* BitsoundShaking.framework */,
-				51203F3C1E6EB8EC00C4C041 /* libstdc++.tbd */,
-				BD12C435D517BFEAD29BD8E6 /* Pods_BitsoundSampleForSwift.framework */,
+				513891711E6FE69600F2CDAE /* BitsoundReceiver.framework */,
+				513891721E6FE69600F2CDAE /* BitsoundShaking.framework */,
+				5138916F1E6FE68A00F2CDAE /* libstdc++.tbd */,
+				1632000225EEF0641D9FDA9B /* libPods-BitsoundSampleForSwift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8C43187BDF996EA7FEAB7435 /* Pods */ = {
+		515BD7821E6FDF0F001C6290 = {
 			isa = PBXGroup;
 			children = (
-				CFB9D7C575D163ED58A0DD6F /* Pods-BitsoundSampleForSwift.debug.xcconfig */,
-				763F893362283E6E02015F77 /* Pods-BitsoundSampleForSwift.release.xcconfig */,
+				5138916D1E6FE65300F2CDAE /* BitsoundSampleForSwift-Bridging-Header.h */,
+				515BD78D1E6FDF0F001C6290 /* BitsoundSampleForSwift */,
+				515BD7A21E6FDF0F001C6290 /* BitsoundSampleForSwiftTests */,
+				515BD7AD1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests */,
+				515BD78C1E6FDF0F001C6290 /* Products */,
+				5138916E1E6FE68A00F2CDAE /* Frameworks */,
+				46B1D9879822D58C9A10A941 /* Pods */,
 			);
-			name = Pods;
+			sourceTree = "<group>";
+		};
+		515BD78C1E6FDF0F001C6290 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				515BD78B1E6FDF0F001C6290 /* BitsoundSampleForSwift.app */,
+				515BD79F1E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.xctest */,
+				515BD7AA1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		515BD78D1E6FDF0F001C6290 /* BitsoundSampleForSwift */ = {
+			isa = PBXGroup;
+			children = (
+				515BD78E1E6FDF0F001C6290 /* AppDelegate.swift */,
+				515BD7901E6FDF0F001C6290 /* ViewController.swift */,
+				515BD7921E6FDF0F001C6290 /* Main.storyboard */,
+				515BD7951E6FDF0F001C6290 /* Assets.xcassets */,
+				515BD7971E6FDF0F001C6290 /* LaunchScreen.storyboard */,
+				515BD79A1E6FDF0F001C6290 /* Info.plist */,
+			);
+			path = BitsoundSampleForSwift;
+			sourceTree = "<group>";
+		};
+		515BD7A21E6FDF0F001C6290 /* BitsoundSampleForSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				515BD7A31E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift */,
+				515BD7A51E6FDF0F001C6290 /* Info.plist */,
+			);
+			path = BitsoundSampleForSwiftTests;
+			sourceTree = "<group>";
+		};
+		515BD7AD1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				515BD7AE1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift */,
+				515BD7B01E6FDF10001C6290 /* Info.plist */,
+			);
+			path = BitsoundSampleForSwiftUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		51203F091E6EB89E00C4C041 /* BitsoundSampleForSwift */ = {
+		515BD78A1E6FDF0F001C6290 /* BitsoundSampleForSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51203F321E6EB89E00C4C041 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwift" */;
+			buildConfigurationList = 515BD7B31E6FDF10001C6290 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwift" */;
 			buildPhases = (
-				337EC4F055FE0F310EC2D762 /* [CP] Check Pods Manifest.lock */,
-				51203F061E6EB89E00C4C041 /* Sources */,
-				51203F071E6EB89E00C4C041 /* Frameworks */,
-				51203F081E6EB89E00C4C041 /* Resources */,
-				FFE09524491EEB655BA47661 /* [CP] Embed Pods Frameworks */,
-				224D7AD3B65DEDA5E718B3CD /* [CP] Copy Pods Resources */,
+				4F095C0F21BB8165FDC9B528 /* [CP] Check Pods Manifest.lock */,
+				515BD7871E6FDF0F001C6290 /* Sources */,
+				515BD7881E6FDF0F001C6290 /* Frameworks */,
+				515BD7891E6FDF0F001C6290 /* Resources */,
+				16730031E2C025406970777C /* [CP] Embed Pods Frameworks */,
+				7D8D2A4A0CBC665CD785B460 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,75 +183,75 @@
 			);
 			name = BitsoundSampleForSwift;
 			productName = BitsoundSampleForSwift;
-			productReference = 51203F0A1E6EB89E00C4C041 /* BitsoundSampleForSwift.app */;
+			productReference = 515BD78B1E6FDF0F001C6290 /* BitsoundSampleForSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
-		51203F1D1E6EB89E00C4C041 /* BitsoundSampleForSwiftTests */ = {
+		515BD79E1E6FDF0F001C6290 /* BitsoundSampleForSwiftTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51203F351E6EB89E00C4C041 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftTests" */;
+			buildConfigurationList = 515BD7B61E6FDF10001C6290 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftTests" */;
 			buildPhases = (
-				51203F1A1E6EB89E00C4C041 /* Sources */,
-				51203F1B1E6EB89E00C4C041 /* Frameworks */,
-				51203F1C1E6EB89E00C4C041 /* Resources */,
+				515BD79B1E6FDF0F001C6290 /* Sources */,
+				515BD79C1E6FDF0F001C6290 /* Frameworks */,
+				515BD79D1E6FDF0F001C6290 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				51203F201E6EB89E00C4C041 /* PBXTargetDependency */,
+				515BD7A11E6FDF0F001C6290 /* PBXTargetDependency */,
 			);
 			name = BitsoundSampleForSwiftTests;
 			productName = BitsoundSampleForSwiftTests;
-			productReference = 51203F1E1E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.xctest */;
+			productReference = 515BD79F1E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		51203F281E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests */ = {
+		515BD7A91E6FDF10001C6290 /* BitsoundSampleForSwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 51203F381E6EB89E00C4C041 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftUITests" */;
+			buildConfigurationList = 515BD7B91E6FDF10001C6290 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftUITests" */;
 			buildPhases = (
-				51203F251E6EB89E00C4C041 /* Sources */,
-				51203F261E6EB89E00C4C041 /* Frameworks */,
-				51203F271E6EB89E00C4C041 /* Resources */,
+				515BD7A61E6FDF10001C6290 /* Sources */,
+				515BD7A71E6FDF10001C6290 /* Frameworks */,
+				515BD7A81E6FDF10001C6290 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				51203F2B1E6EB89E00C4C041 /* PBXTargetDependency */,
+				515BD7AC1E6FDF10001C6290 /* PBXTargetDependency */,
 			);
 			name = BitsoundSampleForSwiftUITests;
 			productName = BitsoundSampleForSwiftUITests;
-			productReference = 51203F291E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.xctest */;
+			productReference = 515BD7AA1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		51203F021E6EB89E00C4C041 /* Project object */ = {
+		515BD7831E6FDF0F001C6290 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "wonje-soundlly";
 				TargetAttributes = {
-					51203F091E6EB89E00C4C041 = {
+					515BD78A1E6FDF0F001C6290 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4G6HH5MMJY;
 						ProvisioningStyle = Automatic;
 					};
-					51203F1D1E6EB89E00C4C041 = {
+					515BD79E1E6FDF0F001C6290 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4G6HH5MMJY;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 51203F091E6EB89E00C4C041;
+						TestTargetID = 515BD78A1E6FDF0F001C6290;
 					};
-					51203F281E6EB89E00C4C041 = {
+					515BD7A91E6FDF10001C6290 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4G6HH5MMJY;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 51203F091E6EB89E00C4C041;
+						TestTargetID = 515BD78A1E6FDF0F001C6290;
 					};
 				};
 			};
-			buildConfigurationList = 51203F051E6EB89E00C4C041 /* Build configuration list for PBXProject "BitsoundSampleForSwift" */;
+			buildConfigurationList = 515BD7861E6FDF0F001C6290 /* Build configuration list for PBXProject "BitsoundSampleForSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -262,38 +259,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 51203F011E6EB89E00C4C041;
-			productRefGroup = 51203F0B1E6EB89E00C4C041 /* Products */;
+			mainGroup = 515BD7821E6FDF0F001C6290;
+			productRefGroup = 515BD78C1E6FDF0F001C6290 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				51203F091E6EB89E00C4C041 /* BitsoundSampleForSwift */,
-				51203F1D1E6EB89E00C4C041 /* BitsoundSampleForSwiftTests */,
-				51203F281E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests */,
+				515BD78A1E6FDF0F001C6290 /* BitsoundSampleForSwift */,
+				515BD79E1E6FDF0F001C6290 /* BitsoundSampleForSwiftTests */,
+				515BD7A91E6FDF10001C6290 /* BitsoundSampleForSwiftUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		51203F081E6EB89E00C4C041 /* Resources */ = {
+		515BD7891E6FDF0F001C6290 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51203F181E6EB89E00C4C041 /* LaunchScreen.storyboard in Resources */,
-				51203F151E6EB89E00C4C041 /* Assets.xcassets in Resources */,
-				51203F441E6EBA9E00C4C041 /* TSMessagesDefaultDesign.json in Resources */,
-				51203F131E6EB89E00C4C041 /* Main.storyboard in Resources */,
+				515BD7991E6FDF0F001C6290 /* LaunchScreen.storyboard in Resources */,
+				515BD7961E6FDF0F001C6290 /* Assets.xcassets in Resources */,
+				515BD7941E6FDF0F001C6290 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51203F1C1E6EB89E00C4C041 /* Resources */ = {
+		515BD79D1E6FDF0F001C6290 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51203F271E6EB89E00C4C041 /* Resources */ = {
+		515BD7A81E6FDF10001C6290 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,37 +299,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		224D7AD3B65DEDA5E718B3CD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		337EC4F055FE0F310EC2D762 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FFE09524491EEB655BA47661 /* [CP] Embed Pods Frameworks */ = {
+		16730031E2C025406970777C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,62 +314,92 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		4F095C0F21BB8165FDC9B528 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D8D2A4A0CBC665CD785B460 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		51203F061E6EB89E00C4C041 /* Sources */ = {
+		515BD7871E6FDF0F001C6290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51203F101E6EB89E00C4C041 /* ViewController.swift in Sources */,
-				51203F0E1E6EB89E00C4C041 /* AppDelegate.swift in Sources */,
+				515BD7911E6FDF0F001C6290 /* ViewController.swift in Sources */,
+				515BD78F1E6FDF0F001C6290 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51203F1A1E6EB89E00C4C041 /* Sources */ = {
+		515BD79B1E6FDF0F001C6290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51203F231E6EB89E00C4C041 /* BitsoundSampleForSwiftTests.swift in Sources */,
+				515BD7A41E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51203F251E6EB89E00C4C041 /* Sources */ = {
+		515BD7A61E6FDF10001C6290 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51203F2E1E6EB89E00C4C041 /* BitsoundSampleForSwiftUITests.swift in Sources */,
+				515BD7AF1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		51203F201E6EB89E00C4C041 /* PBXTargetDependency */ = {
+		515BD7A11E6FDF0F001C6290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51203F091E6EB89E00C4C041 /* BitsoundSampleForSwift */;
-			targetProxy = 51203F1F1E6EB89E00C4C041 /* PBXContainerItemProxy */;
+			target = 515BD78A1E6FDF0F001C6290 /* BitsoundSampleForSwift */;
+			targetProxy = 515BD7A01E6FDF0F001C6290 /* PBXContainerItemProxy */;
 		};
-		51203F2B1E6EB89E00C4C041 /* PBXTargetDependency */ = {
+		515BD7AC1E6FDF10001C6290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 51203F091E6EB89E00C4C041 /* BitsoundSampleForSwift */;
-			targetProxy = 51203F2A1E6EB89E00C4C041 /* PBXContainerItemProxy */;
+			target = 515BD78A1E6FDF0F001C6290 /* BitsoundSampleForSwift */;
+			targetProxy = 515BD7AB1E6FDF10001C6290 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		51203F111E6EB89E00C4C041 /* Main.storyboard */ = {
+		515BD7921E6FDF0F001C6290 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				51203F121E6EB89E00C4C041 /* Base */,
+				515BD7931E6FDF0F001C6290 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		51203F161E6EB89E00C4C041 /* LaunchScreen.storyboard */ = {
+		515BD7971E6FDF0F001C6290 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				51203F171E6EB89E00C4C041 /* Base */,
+				515BD7981E6FDF0F001C6290 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -411,7 +407,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		51203F301E6EB89E00C4C041 /* Debug */ = {
+		515BD7B11E6FDF10001C6290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -461,7 +457,7 @@
 			};
 			name = Debug;
 		};
-		51203F311E6EB89E00C4C041 /* Release */ = {
+		515BD7B21E6FDF10001C6290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -504,28 +500,15 @@
 			};
 			name = Release;
 		};
-		51203F331E6EB89E00C4C041 /* Debug */ = {
+		515BD7B41E6FDF10001C6290 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFB9D7C575D163ED58A0DD6F /* Pods-BitsoundSampleForSwift.debug.xcconfig */;
+			baseConfigurationReference = 729EDDFC8BA84B4251119779 /* Pods-BitsoundSampleForSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G6HH5MMJY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/HexColors\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/TSMessages\"",
-					"$(PROJECT_DIR)/../",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				INFOPLIST_FILE = BitsoundSampleForSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"HexColors\"",
-					"-framework",
-					"\"TSMessages\"",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundlly.BitsoundSampleForSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./BitsoundSampleForSwift-Bridging-Header.h";
@@ -533,28 +516,15 @@
 			};
 			name = Debug;
 		};
-		51203F341E6EB89E00C4C041 /* Release */ = {
+		515BD7B51E6FDF10001C6290 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 763F893362283E6E02015F77 /* Pods-BitsoundSampleForSwift.release.xcconfig */;
+			baseConfigurationReference = 36DB9419A9355FADE37F4CC8 /* Pods-BitsoundSampleForSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G6HH5MMJY;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/HexColors\"",
-					"\"$PODS_CONFIGURATION_BUILD_DIR/TSMessages\"",
-					"$(PROJECT_DIR)/../",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../";
 				INFOPLIST_FILE = BitsoundSampleForSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"HexColors\"",
-					"-framework",
-					"\"TSMessages\"",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundlly.BitsoundSampleForSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "./BitsoundSampleForSwift-Bridging-Header.h";
@@ -562,7 +532,7 @@
 			};
 			name = Release;
 		};
-		51203F361E6EB89E00C4C041 /* Debug */ = {
+		515BD7B71E6FDF10001C6290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -577,7 +547,7 @@
 			};
 			name = Debug;
 		};
-		51203F371E6EB89E00C4C041 /* Release */ = {
+		515BD7B81E6FDF10001C6290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -592,7 +562,7 @@
 			};
 			name = Release;
 		};
-		51203F391E6EB89E00C4C041 /* Debug */ = {
+		515BD7BA1E6FDF10001C6290 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -606,7 +576,7 @@
 			};
 			name = Debug;
 		};
-		51203F3A1E6EB89E00C4C041 /* Release */ = {
+		515BD7BB1E6FDF10001C6290 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -623,43 +593,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		51203F051E6EB89E00C4C041 /* Build configuration list for PBXProject "BitsoundSampleForSwift" */ = {
+		515BD7861E6FDF0F001C6290 /* Build configuration list for PBXProject "BitsoundSampleForSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51203F301E6EB89E00C4C041 /* Debug */,
-				51203F311E6EB89E00C4C041 /* Release */,
+				515BD7B11E6FDF10001C6290 /* Debug */,
+				515BD7B21E6FDF10001C6290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51203F321E6EB89E00C4C041 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwift" */ = {
+		515BD7B31E6FDF10001C6290 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51203F331E6EB89E00C4C041 /* Debug */,
-				51203F341E6EB89E00C4C041 /* Release */,
+				515BD7B41E6FDF10001C6290 /* Debug */,
+				515BD7B51E6FDF10001C6290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51203F351E6EB89E00C4C041 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftTests" */ = {
+		515BD7B61E6FDF10001C6290 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51203F361E6EB89E00C4C041 /* Debug */,
-				51203F371E6EB89E00C4C041 /* Release */,
+				515BD7B71E6FDF10001C6290 /* Debug */,
+				515BD7B81E6FDF10001C6290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		51203F381E6EB89E00C4C041 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftUITests" */ = {
+		515BD7B91E6FDF10001C6290 /* Build configuration list for PBXNativeTarget "BitsoundSampleForSwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				51203F391E6EB89E00C4C041 /* Debug */,
-				51203F3A1E6EB89E00C4C041 /* Release */,
+				515BD7BA1E6FDF10001C6290 /* Debug */,
+				515BD7BB1E6FDF10001C6290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 51203F021E6EB89E00C4C041 /* Project object */;
+	rootObject = 515BD7831E6FDF0F001C6290 /* Project object */;
 }

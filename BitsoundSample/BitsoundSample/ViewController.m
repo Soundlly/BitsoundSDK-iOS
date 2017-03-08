@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-#import <TSMessages/TSMessage.h>
+#import <RMessage/RMessage.h>
 #import <SafariServices/SafariServices.h>
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -65,7 +65,7 @@
         if (result == BitsoundReceiverDetectSuccess) {
             
             // 신호 감지 시작 성공적.
-            [self showMessage:TSMessageNotificationTypeSuccess message:[self detectResultToMsg:result]];
+            [self showMessage:RMessageTypeSuccess message:[self detectResultToMsg:result]];
             
         } else {
         
@@ -77,7 +77,7 @@
              *  BitsoundReceiverInitCoreError, // core 모듈 에러
              */
             
-            [self showMessage:TSMessageNotificationTypeError message:[self detectResultToMsg:result]];
+            [self showMessage:RMessageTypeError message:[self detectResultToMsg:result]];
             
             
             // mic. permission denied -> getScheduledContents (광고 스케쥴 조회)
@@ -111,10 +111,10 @@
 
     if (result == BitsoundEnableShakeSuccess) {
         
-        [self showMessage:TSMessageNotificationTypeSuccess message:[self shakeResultToMsg:result]];
+        [self showMessage:RMessageTypeSuccess message:[self shakeResultToMsg:result]];
     } else {
         
-        [self showMessage:TSMessageNotificationTypeError message:[self shakeResultToMsg:result]];
+        [self showMessage:RMessageTypeError message:[self shakeResultToMsg:result]];
     }
     
 }
@@ -128,20 +128,21 @@
 #pragma mark - private
 - (void)showMessage:(int)type message:(NSString *)message {
     
-    [TSMessage showNotificationInViewController:self
-                                          title:@"Soundl.ly"
-                                       subtitle:message
-                                          image:nil
-                                           type:type
-     //                                            duration:TSMessageNotificationDurationAutomatic
-                                       duration:1.4f
-                                       callback:nil
-                                    buttonTitle:nil
-                                 buttonCallback:^{
-                                     NSLog(@"User tapped the button");
-                                 }
-                                     atPosition:TSMessageNotificationPositionTop
-                           canBeDismissedByUser:YES];
+    [RMessage showNotificationInViewController:self
+                                         title:@"Bitsound"
+                                      subtitle:message
+                                     iconImage:nil
+                                          type:type
+                                customTypeName:nil
+                                      duration:1.4
+                                      callback:^{
+        
+                                    } buttonTitle:nil
+                                buttonCallback:^{
+                                    } atPosition:RMessagePositionTop
+                          canBeDismissedByUser:YES];
+    
+    
 }
 
 - (NSString *)resultForInitToMsg:(BitsoundReceiverInitResult)result {
@@ -252,7 +253,7 @@
         
         // init이 성공이면, startDetect가 가능합니다. startDetect 또는 enableShake + startDetect를 통해 신호를 감지합니다.
         
-        [self showMessage:TSMessageNotificationTypeSuccess message:message];
+        [self showMessage:RMessageTypeSuccess message:message];
         
         
         // set delegate
@@ -263,17 +264,17 @@
         
         if (result == BitsoundEnableShakeSuccess) {
             
-            [self showMessage:TSMessageNotificationTypeSuccess message:[self shakeResultToMsg:result]];
+            [self showMessage:RMessageTypeSuccess message:[self shakeResultToMsg:result]];
         } else {
             
-            [self showMessage:TSMessageNotificationTypeError message:[self shakeResultToMsg:result]];
+            [self showMessage:RMessageTypeError message:[self shakeResultToMsg:result]];
         }
         
         
         
     } else {
     
-        [self showMessage:TSMessageNotificationTypeError message:message];
+        [self showMessage:RMessageTypeError message:message];
     }
 
 }
@@ -283,7 +284,7 @@
     
     if (result == BitsoundReceiverSuccess) {
     
-        [self showMessage:TSMessageNotificationTypeSuccess message:[self resultToMsg:result]];
+        [self showMessage:RMessageTypeSuccess message:[self resultToMsg:result]];
         
         NSLog(@"#########################################");
         NSLog(@"contentsModel.name : %@",contents.name);
@@ -311,19 +312,19 @@
         
     } else {
     
-        [self showMessage:TSMessageNotificationTypeError message:[self resultToMsg:result]];
+        [self showMessage:RMessageTypeError message:[self resultToMsg:result]];
     }
     
 }
 
 - (void)receiverDidStartDetect {
 
-    [self showMessage:TSMessageNotificationTypeMessage message:@"did start detect"];
+    [self showMessage:RMessageTypeNormal message:@"did start detect"];
 }
 
 - (void)receiverDidStopDetect {
 
-    [self showMessage:TSMessageNotificationTypeMessage message:@"did stop detect"];
+    [self showMessage:RMessageTypeNormal message:@"did stop detect"];
 }
 
 
@@ -339,7 +340,7 @@
         if (result == BitsoundReceiverSuccess) {
             
             // 신호 감지 시작 성공적.
-            [self showMessage:TSMessageNotificationTypeSuccess message:[self detectResultToMsg:result]];
+            [self showMessage:RMessageTypeSuccess message:[self detectResultToMsg:result]];
             
         } else {
             
@@ -350,7 +351,7 @@
              *	BitsoundReceiverDetectNotInitialized, // SDK가 초기화 되지 않음
              */
             
-            [self showMessage:TSMessageNotificationTypeError message:[self detectResultToMsg:result]];
+            [self showMessage:RMessageTypeError message:[self detectResultToMsg:result]];
             
 //            // mic. permission denied -> getScheduledContents (광고 스케쥴 조회)
 //            if (result == BitsoundReceiverDetectMicPermissionDenied) {

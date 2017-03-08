@@ -9,12 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PPTopMostController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BitsoundSampleForSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>TSMessages.xcscheme</key>
+		<key>RMessage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>53C24A3D93F7BF3535B1EA6171961415</key>
+		<key>38DEFF06B27B8236BFD3B1F1CD65C532</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A89E030D0A23C09BAA607D07F2CA0F01</key>
+		<key>6C5EEA6CD9D522F95757382235CED06D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB57EF7D8B23701455085EC663E5FA40</key>
+		<key>EC7BAA2B0109B633CE06A36E872A9505</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF3B07349E93C455FAD263198FEADB88</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,5 +1,3 @@
 target 'BitsoundSample' do
-  pod 'TSMessages'
-#  pod 'BitsoundReceiver'
-#  pod 'BitsoundShaking'
+  pod 'RMessage'
 end

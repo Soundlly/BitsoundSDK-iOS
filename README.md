@@ -16,6 +16,7 @@ You can also:
   - 스케쥴 체크하여 동작하는 기능
   - Custom 로그 전송
 
+> Sample project는 pod install or pod update를 실행한 후 빌드해주세요.
 
 ## Requirements
 iOS Deployment Target 7.0+, Xcode 7+

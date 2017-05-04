@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         //        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
         
-        BitsoundReceiver.sharedInstance().initWithAppKey("2af56e31-d2dd-40ef-80b3-d9e505759e4f")
+        BitsoundReceiver.sharedInstance().initWithAppKey("9a1d52a0-34a0-49be-b8c0-6c3078a5788a")
         
         // set delegate
         BitsoundReceiver.sharedInstance().delegate = self

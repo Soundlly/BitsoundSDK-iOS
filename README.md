@@ -66,7 +66,7 @@ Cocoapods이 설치되어 있지 않다면, 다음의 가이드(https://guides.c
 >  .
 >  .
 >  <key>NSMicrophoneUsageDescription</key>
->  <string>광고 속 혜택 제공 기능(고주파 서비스)에 사용 됩니다.</string>
+>  <string>광고 속 혜택 제공 기능(음파 서비스)에 사용 됩니다.</string>
 >  .
 >  .
 > </dict>

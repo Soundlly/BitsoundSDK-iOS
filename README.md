@@ -2,11 +2,11 @@
 
 [![N|Bitsound](https://daks2k3a4ib2z.cloudfront.net/580f2a6962cf032f7b75c078/5812f9cb4c0e119f5c2d04b6_overview_reduced-p-800x487.png)](http://bitsound.io/)
 
-Bitsound iOS SDK는 고주파 비가청 음파를 수신하고, decoding하여 beacon 정보를 가져온다. 해당 beacon으로 등록된 컨텐츠 정보를 조회한다.
-또한 shaking 감지 기능을 제공하여, shaking이 감지되면 고주파 음파를 수신하는 방식을 사용할 수 있다.
-두 개의 framework이 존재하며 BitsoundReceiver.framework은 고주파 비가청 음파를 수신하는 기능을, BitsoundShaking.framework은 shaking 감지 기능을 제공한다. [Bitsound Documentation](https://docs.bitsound.io/v1.0/docs/introduction)
+Bitsound iOS SDK는 비가청 음파를 수신하고, decoding하여 beacon 정보를 가져온다. 해당 beacon으로 등록된 컨텐츠 정보를 조회한다.
+또한 shaking 감지 기능을 제공하여, shaking이 감지되면 음파를 수신하는 방식을 사용할 수 있다.
+두 개의 framework이 존재하며 BitsoundReceiver.framework은 비가청 음파를 수신하는 기능을, BitsoundShaking.framework은 shaking 감지 기능을 제공한다. [Bitsound Documentation](https://docs.bitsound.io/v1.0/docs/introduction)
 
-  - 고주파 비가청 음파 수신 
+  - 비가청 음파 수신 
   - 음파 데이타 decoding하여, beacon 정보 조회
   - beacon으로 동록된, 컨텐츠 정보 조회하여 전달
   - shaking 감지 기능

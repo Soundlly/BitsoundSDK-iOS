@@ -30,6 +30,12 @@ class ViewController: UIViewController {
         // set delegate
         BitsoundReceiver.sharedInstance().delegate = self
         
+        // set tag
+        BitsoundReceiver.sharedInstance().setTag(["tag1": "tag_1"])
+        
+        // set UUID
+        BitsoundReceiver.sharedInstance().setUUID("user_1")
+        
         
         
     }
@@ -173,6 +179,9 @@ class ViewController: UIViewController {
             
         case .coreError:
             msg = "init core error"
+            
+        case .networkError:
+            msg = "init network error"
             
         }
         

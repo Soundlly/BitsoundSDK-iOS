@@ -23,7 +23,8 @@ typedef NS_ENUM(int, BitsoundReceiverInitResult) {
     BitsoundReceiverInitInvalidArguments = -1, // 잘못된 appKey
     BitsoundReceiverInitVerifyAppKeyError = -2, // verify app key error
     BitsoundReceiverInitNotScheduled = -3, // check and init의 경우에 해당되며, 스케쥴에 포함되지 않은 경우 reruen.
-    BitsoundReceiverInitCoreError = -4 // 음파 수신 core module init error
+    BitsoundReceiverInitCoreError = -4, // 음파 수신 core module init error
+    BitsoundReceiverInitNetworkError = -5 // init network error
 };
 
 
@@ -134,6 +135,20 @@ typedef void (^StartDetectBlock)(BitsoundReceiverDetectResult result);
  *
  */
 - (void)getScheduledContents;
+
+
+/**
+ *  set tag
+ *
+ */
+- (void)setTag:(NSDictionary *_Nullable)tag;
+
+
+/**
+ *  set UUID
+ *
+ */
+- (void)setUUID:(NSString *_Nullable)UUID;
 
 @end
 

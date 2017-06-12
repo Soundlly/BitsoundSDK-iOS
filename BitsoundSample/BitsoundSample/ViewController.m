@@ -37,6 +37,12 @@
     // set delegate
     [BitsoundReceiver sharedInstance].delegate = self;
     
+    // set tag
+    [[BitsoundReceiver sharedInstance] setTag:@{@"tag1": @"tag_1"}];
+    
+    // set UUID
+    [[BitsoundReceiver sharedInstance] setUUID:@"user_1"];
+    
 }
 
 
@@ -158,14 +164,14 @@
         case BitsoundReceiverInitVerifyAppKeyError:
             msg = @"init verify app key error";
             break;
-            
         case BitsoundReceiverInitNotScheduled:
             msg = @"init not scheduled";
             break;
-            
         case BitsoundReceiverInitCoreError:
             msg = @"init core error";
             break;
+        case BitsoundReceiverInitNetworkError:
+            msg = @"init network error";
             
         default:
             break;

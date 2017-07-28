@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		514DB2A61E6EAB9A005CD9A7 /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514DB2A41E6EAB9A005CD9A7 /* BitsoundReceiver.framework */; };
-		514DB2A71E6EAB9A005CD9A7 /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514DB2A51E6EAB9A005CD9A7 /* BitsoundShaking.framework */; };
 		516609D51E36059100B2C02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609D41E36059100B2C02B /* main.m */; };
 		516609D81E36059100B2C02B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609D71E36059100B2C02B /* AppDelegate.m */; };
 		516609DB1E36059100B2C02B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609DA1E36059100B2C02B /* ViewController.m */; };
@@ -19,6 +17,9 @@
 		516609F91E36059200B2C02B /* BitsoundSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609F81E36059200B2C02B /* BitsoundSampleUITests.m */; };
 		5172CB8D1E5FD49600923EAF /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5172CB8C1E5FD49600923EAF /* SafariServices.framework */; };
 		519B59FD1E69477700513FAB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51660A091E36064900B2C02B /* libstdc++.tbd */; };
+		51BEA4341F2ACAF200912785 /* BitsoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4311F2ACAF200912785 /* BitsoundPlayer.framework */; };
+		51BEA4351F2ACAF200912785 /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4321F2ACAF200912785 /* BitsoundReceiver.framework */; };
+		51BEA4361F2ACAF200912785 /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4331F2ACAF200912785 /* BitsoundShaking.framework */; };
 		83FE694C2D4A89212F6E2BF2 /* libPods-BitsoundSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		514DB2A41E6EAB9A005CD9A7 /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
-		514DB2A51E6EAB9A005CD9A7 /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
 		516609D01E36059100B2C02B /* BitsoundSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitsoundSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516609D41E36059100B2C02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		516609D61E36059100B2C02B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,6 +59,9 @@
 		516609FA1E36059200B2C02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51660A091E36064900B2C02B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		5172CB8C1E5FD49600923EAF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		51BEA4311F2ACAF200912785 /* BitsoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundPlayer.framework; path = ../BitsoundPlayer.framework; sourceTree = "<group>"; };
+		51BEA4321F2ACAF200912785 /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
+		51BEA4331F2ACAF200912785 /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
 		8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitsoundSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A512C02E6B2B3AAFDEBDD0 /* Pods-BitsoundSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSample/Pods-BitsoundSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E8B5A60C321752661AD0180A /* Pods-BitsoundSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSample/Pods-BitsoundSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,11 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				514DB2A71E6EAB9A005CD9A7 /* BitsoundShaking.framework in Frameworks */,
+				51BEA4341F2ACAF200912785 /* BitsoundPlayer.framework in Frameworks */,
+				51BEA4351F2ACAF200912785 /* BitsoundReceiver.framework in Frameworks */,
+				51BEA4361F2ACAF200912785 /* BitsoundShaking.framework in Frameworks */,
 				519B59FD1E69477700513FAB /* libstdc++.tbd in Frameworks */,
 				5172CB8D1E5FD49600923EAF /* SafariServices.framework in Frameworks */,
 				83FE694C2D4A89212F6E2BF2 /* libPods-BitsoundSample.a in Frameworks */,
-				514DB2A61E6EAB9A005CD9A7 /* BitsoundReceiver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +165,9 @@
 		51660A081E36064800B2C02B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				514DB2A41E6EAB9A005CD9A7 /* BitsoundReceiver.framework */,
-				514DB2A51E6EAB9A005CD9A7 /* BitsoundShaking.framework */,
+				51BEA4311F2ACAF200912785 /* BitsoundPlayer.framework */,
+				51BEA4321F2ACAF200912785 /* BitsoundReceiver.framework */,
+				51BEA4331F2ACAF200912785 /* BitsoundShaking.framework */,
 				5172CB8C1E5FD49600923EAF /* SafariServices.framework */,
 				51660A091E36064900B2C02B /* libstdc++.tbd */,
 				8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */,

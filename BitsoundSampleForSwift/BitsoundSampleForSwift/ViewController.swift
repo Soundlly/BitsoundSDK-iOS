@@ -25,17 +25,19 @@ class ViewController: UIViewController {
         
         //        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
         
-        BitsoundReceiver.sharedInstance().initWithAppKey("9a1d52a0-34a0-49be-b8c0-6c3078a5788a")
+        BitsoundReceiver.sharedInstance().initWithAppKey("6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7")
         
-        // set delegate
+        // receiver set delegate
         BitsoundReceiver.sharedInstance().delegate = self
+        
+        // player set delegate
+        BitsoundPlayer.sharedInstance().delegate = self
         
         // set tag
         BitsoundReceiver.sharedInstance().setTag(["tag1": "tag_1"])
         
         // set UUID
         BitsoundReceiver.sharedInstance().setUUID("user_1")
-        
         
         
     }
@@ -117,6 +119,15 @@ class ViewController: UIViewController {
         BitsoundShaking.sharedInstance().disableShake()
     }
     
+    @IBAction func play(_ sender: Any?) {
+        // play with beacon
+        BitsoundPlayer.sharedInstance().play(withBeacon: 230, volume: -6)
+    }
+    
+    @IBAction func stop(_ sender: Any?) {
+        // stop
+        BitsoundPlayer.sharedInstance().stop()
+    }
     
     
     // MARK: - private
@@ -251,25 +262,26 @@ extension ViewController: BitsoundReceiverDelegate {
                 
                 print("contents name : \(unwrappedName), comment : \(unwrappedComment)")
                 
-                if #available(iOS 9.0, *) {
-                    
-                    let safariViewController = SFSafariViewController(url: URL(string: unwrappedUrlString)!)
-                    self.present(safariViewController, animated: true, completion: {
-                        
-                    })
-                } else {
-                    
-                    UIApplication.shared.openURL(URL(string: unwrappedUrlString)!)
-                }
                 
+                if unwrappedUrlString.hasPrefix("http://") || unwrappedUrlString.hasPrefix("https://") {
+                 
+                    if #available(iOS 9.0, *) {
+                        
+                        let safariViewController = SFSafariViewController(url: URL(string: unwrappedUrlString)!)
+                        self.present(safariViewController, animated: true, completion: {
+                            
+                        })
+                    } else {
+                        
+                        UIApplication.shared.openURL(URL(string: unwrappedUrlString)!)
+                    }
+                }
             }
             
         } else {
             
             self.showMessage(type: RMessageType.error, message: self.resultToMsg(result: result))
-            
         }
-        
     }
     
     // start detect 되었다는 noti.
@@ -333,3 +345,22 @@ extension ViewController: BitsoundShakingDelegate {
     }
 }
 
+// MARK: - BitsoundPlayerDelegate
+extension ViewController: BitsoundPlayerDelegate {
+
+    func playerDidStart() {
+        self.showMessage(type: RMessageType.normal, message: "player did start")
+    }
+    
+    func playerDidStop() {
+        self.showMessage(type: RMessageType.normal, message: "player did stop")
+    }
+    
+    func playWithError(_ error: Error?) {
+        self.showMessage(type: RMessageType.error, message: "play with error : \(String(describing: error))")
+    }
+    
+    func stopWithError(_ error: Error?) {
+        self.showMessage(type: RMessageType.error, message: "stop with error : \(String(describing: error))")
+    }
+}

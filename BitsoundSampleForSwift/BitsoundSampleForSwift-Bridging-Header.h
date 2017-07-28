@@ -11,6 +11,7 @@
 
 #import <BitsoundReceiver/BitsoundReceiver.h>
 #import <BitsoundShaking/BitsoundShaking.h>
+#import <BitsoundPlayer/BitsoundPlayer.h>
 
 #import <RMessage/RMessage.h>
 

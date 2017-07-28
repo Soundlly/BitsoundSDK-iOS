@@ -17,6 +17,7 @@
 		515BD7991E6FDF0F001C6290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515BD7971E6FDF0F001C6290 /* LaunchScreen.storyboard */; };
 		515BD7A41E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515BD7A31E6FDF0F001C6290 /* BitsoundSampleForSwiftTests.swift */; };
 		515BD7AF1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515BD7AE1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift */; };
+		51BEA4381F2ACDD300912785 /* BitsoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4371F2ACDD300912785 /* BitsoundPlayer.framework */; };
 		DF18D51F8BEE9F43B57D3996 /* libPods-BitsoundSampleForSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1632000225EEF0641D9FDA9B /* libPods-BitsoundSampleForSwift.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		515BD7AA1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitsoundSampleForSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		515BD7AE1E6FDF10001C6290 /* BitsoundSampleForSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftUITests.swift; sourceTree = "<group>"; };
 		515BD7B01E6FDF10001C6290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BEA4371F2ACDD300912785 /* BitsoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundPlayer.framework; path = "../../BitsoundPlayer-iOS/BitsoundPlayer.framework"; sourceTree = "<group>"; };
 		729EDDFC8BA84B4251119779 /* Pods-BitsoundSampleForSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSampleForSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSampleForSwift/Pods-BitsoundSampleForSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BEA4381F2ACDD300912785 /* BitsoundPlayer.framework in Frameworks */,
 				513891741E6FE69600F2CDAE /* BitsoundShaking.framework in Frameworks */,
 				513891701E6FE68A00F2CDAE /* libstdc++.tbd in Frameworks */,
 				513891731E6FE69600F2CDAE /* BitsoundReceiver.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		5138916E1E6FE68A00F2CDAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				51BEA4371F2ACDD300912785 /* BitsoundPlayer.framework */,
 				513891711E6FE69600F2CDAE /* BitsoundReceiver.framework */,
 				513891721E6FE69600F2CDAE /* BitsoundShaking.framework */,
 				5138916F1E6FE68A00F2CDAE /* libstdc++.tbd */,

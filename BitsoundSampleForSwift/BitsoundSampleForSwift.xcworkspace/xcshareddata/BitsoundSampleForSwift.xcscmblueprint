@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3CD449D7875FE3537AEC07A1561DCC903EF02106",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3CD449D7875FE3537AEC07A1561DCC903EF02106" : 9223372036854775807,
+    "65F89B1F93654FC11979B27B5BC5484BF43C5FD2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA9ADE85-09F7-44C7-B5B0-D65A291781DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3CD449D7875FE3537AEC07A1561DCC903EF02106" : "BitsoundSDK-iOS\/",
+    "65F89B1F93654FC11979B27B5BC5484BF43C5FD2" : "BitsoundPlayer-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BitsoundSampleForSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BitsoundSampleForSwift\/BitsoundSampleForSwift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/soundlly\/BitsoundSDK-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3CD449D7875FE3537AEC07A1561DCC903EF02106"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/soundlly\/BitsoundPlayer-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "65F89B1F93654FC11979B27B5BC5484BF43C5FD2"
+    }
+  ]
+}

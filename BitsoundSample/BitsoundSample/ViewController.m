@@ -14,8 +14,9 @@
 
 #import <BitsoundReceiver/BitsoundReceiver.h>
 #import <BitsoundShaking/BitsoundShaking.h>
+#import <BitsoundPlayer/BitsoundPlayer.h>
 
-@interface ViewController () <BitsoundReceiverDelegate, BitsoundShakingDelegate, NSURLConnectionDelegate, NSURLSessionDataDelegate>
+@interface ViewController () <BitsoundReceiverDelegate, BitsoundShakingDelegate, BitsoundPlayerDelegate, NSURLConnectionDelegate, NSURLSessionDataDelegate>
 
 @property (nonatomic, strong) IBOutlet UIButton *startDetectWithContentsAssistantYESButton;
 
@@ -31,16 +32,18 @@
 
     // init with app key
 //    [[BitsoundReceiver sharedInstance] initWithAppKey:@"your_app_key"];
-    [[BitsoundReceiver sharedInstance] initWithAppKey:@"9a1d52a0-34a0-49be-b8c0-6c3078a5788a"];
+    [[BitsoundReceiver sharedInstance] initWithAppKey:@"6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7"];
 
-    
-    // set delegate
+    // receiver set delegate
     [BitsoundReceiver sharedInstance].delegate = self;
     
-    // set tag
+    // player set delegate
+    [BitsoundPlayer sharedInstance].delegate = self;
+    
+    // set tag (optional)
     [[BitsoundReceiver sharedInstance] setTag:@{@"tag1": @"tag_1"}];
     
-    // set UUID
+    // set UUID (optional)
     [[BitsoundReceiver sharedInstance] setUUID:@"user_1"];
     
 }
@@ -67,7 +70,7 @@
     // start detect with contents assistant
     // ContentsAssistant을 isUsed(YES)를 한 경우, 음파 수신 실패가 발생하면 광고 스케쥴을 조회한다.
     [[BitsoundReceiver sharedInstance] startDetectWithContentsAssistant:contentsAssistant detectResult:^(BitsoundReceiverDetectResult result) {
-        
+
         if (result == BitsoundReceiverDetectSuccess) {
             
             // 신호 감지 시작 성공적.
@@ -129,6 +132,17 @@
     
     // disable shake
     [[BitsoundShaking sharedInstance] disableShake];
+}
+
+
+- (IBAction)play:(id)sender {
+    // play with beacon and volume
+    [[BitsoundPlayer sharedInstance] playWithBeacon:230 volume:-6];
+}
+
+- (IBAction)stop:(id)sender {
+    // stop
+    [[BitsoundPlayer sharedInstance] stop];
 }
 
 #pragma mark - private
@@ -263,18 +277,18 @@
         
         
         // set delegate
-        [BitsoundShaking sharedInstance].delegate = self;
+//        [BitsoundShaking sharedInstance].delegate = self;
         
         // enable shake
-        BitsoundEnableShakeResult result = [[BitsoundShaking sharedInstance] enableShake];
-        
-        if (result == BitsoundEnableShakeSuccess) {
-            
-            [self showMessage:RMessageTypeSuccess message:[self shakeResultToMsg:result]];
-        } else {
-            
-            [self showMessage:RMessageTypeError message:[self shakeResultToMsg:result]];
-        }
+//        BitsoundEnableShakeResult result = [[BitsoundShaking sharedInstance] enableShake];
+//        
+//        if (result == BitsoundEnableShakeSuccess) {
+//            
+//            [self showMessage:RMessageTypeSuccess message:[self shakeResultToMsg:result]];
+//        } else {
+//            
+//            [self showMessage:RMessageTypeError message:[self shakeResultToMsg:result]];
+//        }
         
         
         
@@ -300,7 +314,7 @@
         
         if (NSClassFromString(@"SFSafariViewController")) {
             
-//            if ([[contents getStrValue:@"url"] hasPrefix:@"http://"] || [[contents getStrValue:@"url"] hasPrefix:@"htts://"]) {
+            if ([[contents getStrValue:@"url"] hasPrefix:@"http://"] || [[contents getStrValue:@"url"] hasPrefix:@"htts://"]) {
             
             NSLog(@"url : %@", [contents getStrValue:@"url"]);
             
@@ -308,9 +322,7 @@
                 [self presentViewController:safariViewController animated:YES completion:^{
                     
                 }];
-//            }
-            
-            
+            }
         } else {
             
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString: [[contents getStrValue:@"url"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
@@ -364,10 +376,26 @@
 //                
 //                [[BitsoundReceiver sharedInstance] getScheduledContents];
 //            }
-            
         }
-        
+    
     }];
+}
+
+#pragma mark - BitsoundPlayerDelegate
+- (void)playerDidStart {
+    [self showMessage:RMessageTypeNormal message:@"player did start"];
+}
+
+- (void)playerDidStop {
+    [self showMessage:RMessageTypeNormal message:@"player did stop"];
+}
+
+- (void)playWithError:(NSError *)error {
+    [self showMessage:RMessageTypeError message:[NSString stringWithFormat:@"play with error : %@", error]];
+}
+
+- (void)stopWithError:(NSError *)error {
+    [self showMessage:RMessageTypeError message:[NSString stringWithFormat:@"stop with error : %@", error]];
 }
 
 @end

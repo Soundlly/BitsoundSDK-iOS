@@ -31,8 +31,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     // init with app key
-//    [[BitsoundReceiver sharedInstance] initWithAppKey:@"your_app_key"];
-    [[BitsoundReceiver sharedInstance] initWithAppKey:@"6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7"];
+    [[BitsoundReceiver sharedInstance] initWithAppKey:@"your_app_key"];
 
     // receiver set delegate
     [BitsoundReceiver sharedInstance].delegate = self;
@@ -396,6 +395,13 @@
 
 - (void)stopWithError:(NSError *)error {
     [self showMessage:RMessageTypeError message:[NSString stringWithFormat:@"stop with error : %@", error]];
+}
+
+- (void)receiverWithAppKeyDidNotInitialize {
+    [self showMessage:RMessageTypeError message:@"receiverWithAppKeyDidNotInitialize"];
+    
+    // BitsoundReceiver init with app key
+    [[BitsoundReceiver sharedInstance] initWithAppKey:@"6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7"];
 }
 
 @end

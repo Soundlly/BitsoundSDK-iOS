@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         
         //        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
         
-        BitsoundReceiver.sharedInstance().initWithAppKey("6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7")
+//        BitsoundReceiver.sharedInstance().initWithAppKey("6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7")
         
         // receiver set delegate
         BitsoundReceiver.sharedInstance().delegate = self
@@ -362,5 +362,11 @@ extension ViewController: BitsoundPlayerDelegate {
     
     func stopWithError(_ error: Error?) {
         self.showMessage(type: RMessageType.error, message: "stop with error : \(String(describing: error))")
+    }
+    
+    func receiverWithAppKeyDidNotInitialize() {
+        self.showMessage(type: RMessageType.error, message: "receiverWithAppKeyDidNotInitialize")
+        // init BitsoundReceiver init with app key
+        BitsoundReceiver.sharedInstance().initWithAppKey("6bcb0c2c-376d-4db7-93cb-4b978d3e9ff7")
     }
 }

@@ -62,6 +62,13 @@
 - (void)playerDidStop;
 
 /**
+ *	receiver with app key로 초기화 되지 않음.
+ *  BitsoundReceiver initWithAppKey: 로 초기화를 해야함.
+ */
+- (void)receiverWithAppKeyDidNotInitialize;
+
+@optional
+/**
  *	play시, 오류가 발생될때 호출된다.
  */
 - (void)playWithError:(NSError *_Nullable)error;

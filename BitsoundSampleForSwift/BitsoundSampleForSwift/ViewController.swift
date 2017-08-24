@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // init with app key
-        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
+//        BitsoundReceiver.sharedInstance().initWithAppKey("your_app_key")
+        BitsoundReceiver.sharedInstance().initWithAppKey("75d97ae5-0e2d-4322-82cd-9770d129cd04")
         
         // receiver set delegate
         BitsoundReceiver.sharedInstance().delegate = self

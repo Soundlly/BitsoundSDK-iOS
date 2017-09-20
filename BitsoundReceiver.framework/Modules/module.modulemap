@@ -1,0 +1,6 @@
+framework module BitsoundReceiver {
+  umbrella header "BitsoundReceiver.h"
+
+  export *
+  module * { export * }
+}

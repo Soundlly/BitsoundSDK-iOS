@@ -16,10 +16,16 @@
 		516609EE1E36059200B2C02B /* BitsoundSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609ED1E36059200B2C02B /* BitsoundSampleTests.m */; };
 		516609F91E36059200B2C02B /* BitsoundSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609F81E36059200B2C02B /* BitsoundSampleUITests.m */; };
 		5172CB8D1E5FD49600923EAF /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5172CB8C1E5FD49600923EAF /* SafariServices.framework */; };
+		51978F4B1F7244D20092DA24 /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F471F7244D10092DA24 /* BitsoundShaking.framework */; };
+		51978F4C1F7244D20092DA24 /* BitsoundShaking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F471F7244D10092DA24 /* BitsoundShaking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51978F4D1F7244D20092DA24 /* BitsoundCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F481F7244D10092DA24 /* BitsoundCore.framework */; };
+		51978F4E1F7244D20092DA24 /* BitsoundCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F481F7244D10092DA24 /* BitsoundCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51978F4F1F7244D20092DA24 /* BitsoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F491F7244D10092DA24 /* BitsoundPlayer.framework */; };
+		51978F501F7244D20092DA24 /* BitsoundPlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F491F7244D10092DA24 /* BitsoundPlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51978F511F7244D20092DA24 /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F4A1F7244D20092DA24 /* BitsoundReceiver.framework */; };
+		51978F521F7244D20092DA24 /* BitsoundReceiver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F4A1F7244D20092DA24 /* BitsoundReceiver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51978F551F72450C0092DA24 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F541F72450C0092DA24 /* AudioToolbox.framework */; };
 		519B59FD1E69477700513FAB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51660A091E36064900B2C02B /* libstdc++.tbd */; };
-		51BEA4341F2ACAF200912785 /* BitsoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4311F2ACAF200912785 /* BitsoundPlayer.framework */; };
-		51BEA4351F2ACAF200912785 /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4321F2ACAF200912785 /* BitsoundReceiver.framework */; };
-		51BEA4361F2ACAF200912785 /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51BEA4331F2ACAF200912785 /* BitsoundShaking.framework */; };
 		83FE694C2D4A89212F6E2BF2 /* libPods-BitsoundSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +44,73 @@
 			remoteGlobalIDString = 516609CF1E36059100B2C02B;
 			remoteInfo = BitsoundSample;
 		};
+		519B42761F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B42121F72442900B93D77 /* BitsoundSampleForSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 515BD78B1E6FDF0F001C6290;
+			remoteInfo = BitsoundSampleForSwift;
+		};
+		519B42781F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B42121F72442900B93D77 /* BitsoundSampleForSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 515BD79F1E6FDF0F001C6290;
+			remoteInfo = BitsoundSampleForSwiftTests;
+		};
+		519B427A1F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B42121F72442900B93D77 /* BitsoundSampleForSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 515BD7AA1E6FDF10001C6290;
+			remoteInfo = BitsoundSampleForSwiftUITests;
+		};
+		519B42801F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B423C1F72442A00B93D77 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE57EDD5990552B6F46D19BDAA5ED4D2;
+			remoteInfo = HexColors;
+		};
+		519B42821F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B423C1F72442A00B93D77 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 49F56FB9126F38DA92C4CDA17BC0CBEE;
+			remoteInfo = "Pods-BitsoundSampleForSwift";
+		};
+		519B42841F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B423C1F72442A00B93D77 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B154527D833A55AD9FB5EF4C715EA0F;
+			remoteInfo = PPTopMostController;
+		};
+		519B42861F72442A00B93D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 519B423C1F72442A00B93D77 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F41302A217B2D910082F18AEDEB7EAD4;
+			remoteInfo = RMessage;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		51978F531F7244D20092DA24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				51978F4C1F7244D20092DA24 /* BitsoundShaking.framework in Embed Frameworks */,
+				51978F4E1F7244D20092DA24 /* BitsoundCore.framework in Embed Frameworks */,
+				51978F501F7244D20092DA24 /* BitsoundPlayer.framework in Embed Frameworks */,
+				51978F521F7244D20092DA24 /* BitsoundReceiver.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		516609D01E36059100B2C02B /* BitsoundSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitsoundSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,9 +131,85 @@
 		516609FA1E36059200B2C02B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51660A091E36064900B2C02B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		5172CB8C1E5FD49600923EAF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		51BEA4311F2ACAF200912785 /* BitsoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundPlayer.framework; path = ../BitsoundPlayer.framework; sourceTree = "<group>"; };
-		51BEA4321F2ACAF200912785 /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
-		51BEA4331F2ACAF200912785 /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
+		51978F471F7244D10092DA24 /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
+		51978F481F7244D10092DA24 /* BitsoundCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundCore.framework; path = ../BitsoundCore.framework; sourceTree = "<group>"; };
+		51978F491F7244D10092DA24 /* BitsoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundPlayer.framework; path = ../BitsoundPlayer.framework; sourceTree = "<group>"; };
+		51978F4A1F7244D20092DA24 /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
+		51978F541F72450C0092DA24 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		519B42091F72442900B93D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		519B420A1F72442900B93D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		519B420C1F72442900B93D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		519B420E1F72442900B93D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		519B420F1F72442900B93D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519B42101F72442900B93D77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		519B42111F72442900B93D77 /* BitsoundSampleForSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitsoundSampleForSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		519B42121F72442900B93D77 /* BitsoundSampleForSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = BitsoundSampleForSwift.xcodeproj; sourceTree = "<group>"; };
+		519B42151F72442A00B93D77 /* BitsoundSampleForSwift.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BitsoundSampleForSwift.xcworkspace; sourceTree = "<group>"; };
+		519B42171F72442A00B93D77 /* BitsoundSampleForSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftTests.swift; sourceTree = "<group>"; };
+		519B42181F72442A00B93D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519B421A1F72442A00B93D77 /* BitsoundSampleForSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitsoundSampleForSwiftUITests.swift; sourceTree = "<group>"; };
+		519B421B1F72442A00B93D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		519B421C1F72442A00B93D77 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		519B421D1F72442A00B93D77 /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		519B42221F72442A00B93D77 /* HexColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		519B42241F72442A00B93D77 /* PPTopMostControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPTopMostControllerProtocol.h; sourceTree = "<group>"; };
+		519B42251F72442A00B93D77 /* UINavigationController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42261F72442A00B93D77 /* UITabBarController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42271F72442A00B93D77 /* UIViewController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42291F72442A00B93D77 /* RMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMessage.h; sourceTree = "<group>"; };
+		519B422A1F72442A00B93D77 /* RMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMessageView.h; sourceTree = "<group>"; };
+		519B422D1F72442A00B93D77 /* HexColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		519B422F1F72442A00B93D77 /* PPTopMostControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPTopMostControllerProtocol.h; sourceTree = "<group>"; };
+		519B42301F72442A00B93D77 /* UINavigationController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42311F72442A00B93D77 /* UITabBarController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42321F72442A00B93D77 /* UIViewController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42341F72442A00B93D77 /* RMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMessage.h; sourceTree = "<group>"; };
+		519B42351F72442A00B93D77 /* RMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMessageView.h; sourceTree = "<group>"; };
+		519B42381F72442A00B93D77 /* HexColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexColors.h; sourceTree = "<group>"; };
+		519B42391F72442A00B93D77 /* HexColors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexColors.m; sourceTree = "<group>"; };
+		519B423B1F72442A00B93D77 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		519B423C1F72442A00B93D77 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		519B42401F72442A00B93D77 /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		519B42421F72442A00B93D77 /* PPTopMostControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPTopMostControllerProtocol.h; sourceTree = "<group>"; };
+		519B42431F72442A00B93D77 /* UINavigationController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42441F72442A00B93D77 /* UINavigationController+PPTopMostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+PPTopMostController.m"; sourceTree = "<group>"; };
+		519B42451F72442A00B93D77 /* UITabBarController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42461F72442A00B93D77 /* UITabBarController+PPTopMostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+PPTopMostController.m"; sourceTree = "<group>"; };
+		519B42471F72442A00B93D77 /* UIViewController+PPTopMostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PPTopMostController.h"; sourceTree = "<group>"; };
+		519B42481F72442A00B93D77 /* UIViewController+PPTopMostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PPTopMostController.m"; sourceTree = "<group>"; };
+		519B42491F72442A00B93D77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		519B424B1F72442A00B93D77 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		519B424C1F72442A00B93D77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		519B424F1F72442A00B93D77 /* NotificationBackgroundErrorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundErrorIcon.png; sourceTree = "<group>"; };
+		519B42501F72442A00B93D77 /* NotificationBackgroundErrorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundErrorIcon@2x.png"; sourceTree = "<group>"; };
+		519B42511F72442A00B93D77 /* NotificationBackgroundSuccessIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundSuccessIcon.png; sourceTree = "<group>"; };
+		519B42521F72442A00B93D77 /* NotificationBackgroundSuccessIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundSuccessIcon@2x.png"; sourceTree = "<group>"; };
+		519B42531F72442A00B93D77 /* NotificationBackgroundWarningIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationBackgroundWarningIcon.png; sourceTree = "<group>"; };
+		519B42541F72442A00B93D77 /* NotificationBackgroundWarningIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationBackgroundWarningIcon@2x.png"; sourceTree = "<group>"; };
+		519B42551F72442A00B93D77 /* NotificationButtonBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotificationButtonBackground.png; sourceTree = "<group>"; };
+		519B42561F72442A00B93D77 /* NotificationButtonBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NotificationButtonBackground@2x.png"; sourceTree = "<group>"; };
+		519B42571F72442A00B93D77 /* RMessageDefaultDesign.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RMessageDefaultDesign.json; sourceTree = "<group>"; };
+		519B42591F72442A00B93D77 /* RMessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RMessageView.xib; sourceTree = "<group>"; };
+		519B425A1F72442A00B93D77 /* RMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMessage.h; sourceTree = "<group>"; };
+		519B425B1F72442A00B93D77 /* RMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMessage.m; sourceTree = "<group>"; };
+		519B425C1F72442A00B93D77 /* RMessageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMessageView.h; sourceTree = "<group>"; };
+		519B425D1F72442A00B93D77 /* RMessageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMessageView.m; sourceTree = "<group>"; };
+		519B42601F72442A00B93D77 /* HexColors-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HexColors-dummy.m"; sourceTree = "<group>"; };
+		519B42611F72442A00B93D77 /* HexColors-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexColors-prefix.pch"; sourceTree = "<group>"; };
+		519B42621F72442A00B93D77 /* HexColors.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = HexColors.xcconfig; sourceTree = "<group>"; };
+		519B42641F72442A00B93D77 /* Pods-BitsoundSampleForSwift-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-BitsoundSampleForSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		519B42651F72442A00B93D77 /* Pods-BitsoundSampleForSwift-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-BitsoundSampleForSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		519B42661F72442A00B93D77 /* Pods-BitsoundSampleForSwift-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitsoundSampleForSwift-dummy.m"; sourceTree = "<group>"; };
+		519B42671F72442A00B93D77 /* Pods-BitsoundSampleForSwift-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-BitsoundSampleForSwift-frameworks.sh"; sourceTree = "<group>"; };
+		519B42681F72442A00B93D77 /* Pods-BitsoundSampleForSwift-resources.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-BitsoundSampleForSwift-resources.sh"; sourceTree = "<group>"; };
+		519B42691F72442A00B93D77 /* Pods-BitsoundSampleForSwift.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-BitsoundSampleForSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		519B426A1F72442A00B93D77 /* Pods-BitsoundSampleForSwift.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-BitsoundSampleForSwift.release.xcconfig"; sourceTree = "<group>"; };
+		519B426C1F72442A00B93D77 /* PPTopMostController-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PPTopMostController-dummy.m"; sourceTree = "<group>"; };
+		519B426D1F72442A00B93D77 /* PPTopMostController-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PPTopMostController-prefix.pch"; sourceTree = "<group>"; };
+		519B426E1F72442A00B93D77 /* PPTopMostController.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PPTopMostController.xcconfig; sourceTree = "<group>"; };
+		519B42701F72442A00B93D77 /* RMessage-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RMessage-dummy.m"; sourceTree = "<group>"; };
+		519B42711F72442A00B93D77 /* RMessage-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMessage-prefix.pch"; sourceTree = "<group>"; };
+		519B42721F72442A00B93D77 /* RMessage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RMessage.xcconfig; sourceTree = "<group>"; };
 		8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitsoundSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A512C02E6B2B3AAFDEBDD0 /* Pods-BitsoundSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSample/Pods-BitsoundSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E8B5A60C321752661AD0180A /* Pods-BitsoundSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSample/Pods-BitsoundSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,12 +220,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51BEA4341F2ACAF200912785 /* BitsoundPlayer.framework in Frameworks */,
-				51BEA4351F2ACAF200912785 /* BitsoundReceiver.framework in Frameworks */,
-				51BEA4361F2ACAF200912785 /* BitsoundShaking.framework in Frameworks */,
+				51978F551F72450C0092DA24 /* AudioToolbox.framework in Frameworks */,
 				519B59FD1E69477700513FAB /* libstdc++.tbd in Frameworks */,
 				5172CB8D1E5FD49600923EAF /* SafariServices.framework in Frameworks */,
+				51978F511F7244D20092DA24 /* BitsoundReceiver.framework in Frameworks */,
+				51978F4D1F7244D20092DA24 /* BitsoundCore.framework in Frameworks */,
+				51978F4B1F7244D20092DA24 /* BitsoundShaking.framework in Frameworks */,
 				83FE694C2D4A89212F6E2BF2 /* libPods-BitsoundSample.a in Frameworks */,
+				51978F4F1F7244D20092DA24 /* BitsoundPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +251,11 @@
 		516609C71E36059100B2C02B = {
 			isa = PBXGroup;
 			children = (
+				51978F481F7244D10092DA24 /* BitsoundCore.framework */,
+				51978F491F7244D10092DA24 /* BitsoundPlayer.framework */,
+				51978F4A1F7244D20092DA24 /* BitsoundReceiver.framework */,
+				51978F471F7244D10092DA24 /* BitsoundShaking.framework */,
+				519B42071F72442900B93D77 /* BitsoundSampleForSwift */,
 				516609D21E36059100B2C02B /* BitsoundSample */,
 				516609EC1E36059200B2C02B /* BitsoundSampleTests */,
 				516609F71E36059200B2C02B /* BitsoundSampleUITests */,
@@ -165,14 +320,331 @@
 		51660A081E36064800B2C02B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51BEA4311F2ACAF200912785 /* BitsoundPlayer.framework */,
-				51BEA4321F2ACAF200912785 /* BitsoundReceiver.framework */,
-				51BEA4331F2ACAF200912785 /* BitsoundShaking.framework */,
+				51978F541F72450C0092DA24 /* AudioToolbox.framework */,
 				5172CB8C1E5FD49600923EAF /* SafariServices.framework */,
 				51660A091E36064900B2C02B /* libstdc++.tbd */,
 				8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		519B42071F72442900B93D77 /* BitsoundSampleForSwift */ = {
+			isa = PBXGroup;
+			children = (
+				519B42081F72442900B93D77 /* BitsoundSampleForSwift */,
+				519B42111F72442900B93D77 /* BitsoundSampleForSwift-Bridging-Header.h */,
+				519B42121F72442900B93D77 /* BitsoundSampleForSwift.xcodeproj */,
+				519B42151F72442A00B93D77 /* BitsoundSampleForSwift.xcworkspace */,
+				519B42161F72442A00B93D77 /* BitsoundSampleForSwiftTests */,
+				519B42191F72442A00B93D77 /* BitsoundSampleForSwiftUITests */,
+				519B421C1F72442A00B93D77 /* Podfile */,
+				519B421D1F72442A00B93D77 /* Podfile.lock */,
+				519B421E1F72442A00B93D77 /* Pods */,
+			);
+			name = BitsoundSampleForSwift;
+			path = ../BitsoundSampleForSwift;
+			sourceTree = "<group>";
+		};
+		519B42081F72442900B93D77 /* BitsoundSampleForSwift */ = {
+			isa = PBXGroup;
+			children = (
+				519B42091F72442900B93D77 /* AppDelegate.swift */,
+				519B420A1F72442900B93D77 /* Assets.xcassets */,
+				519B420B1F72442900B93D77 /* LaunchScreen.storyboard */,
+				519B420D1F72442900B93D77 /* Main.storyboard */,
+				519B420F1F72442900B93D77 /* Info.plist */,
+				519B42101F72442900B93D77 /* ViewController.swift */,
+			);
+			path = BitsoundSampleForSwift;
+			sourceTree = "<group>";
+		};
+		519B42131F72442900B93D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				519B42771F72442A00B93D77 /* BitsoundSampleForSwift.app */,
+				519B42791F72442A00B93D77 /* BitsoundSampleForSwiftTests.xctest */,
+				519B427B1F72442A00B93D77 /* BitsoundSampleForSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		519B42161F72442A00B93D77 /* BitsoundSampleForSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				519B42171F72442A00B93D77 /* BitsoundSampleForSwiftTests.swift */,
+				519B42181F72442A00B93D77 /* Info.plist */,
+			);
+			path = BitsoundSampleForSwiftTests;
+			sourceTree = "<group>";
+		};
+		519B42191F72442A00B93D77 /* BitsoundSampleForSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				519B421A1F72442A00B93D77 /* BitsoundSampleForSwiftUITests.swift */,
+				519B421B1F72442A00B93D77 /* Info.plist */,
+			);
+			path = BitsoundSampleForSwiftUITests;
+			sourceTree = "<group>";
+		};
+		519B421E1F72442A00B93D77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				519B421F1F72442A00B93D77 /* Headers */,
+				519B42361F72442A00B93D77 /* HexColors */,
+				519B423A1F72442A00B93D77 /* Local Podspecs */,
+				519B423B1F72442A00B93D77 /* Manifest.lock */,
+				519B423C1F72442A00B93D77 /* Pods.xcodeproj */,
+				519B423F1F72442A00B93D77 /* PPTopMostController */,
+				519B424A1F72442A00B93D77 /* RMessage */,
+				519B425E1F72442A00B93D77 /* Target Support Files */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		519B421F1F72442A00B93D77 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				519B42201F72442A00B93D77 /* Private */,
+				519B422B1F72442A00B93D77 /* Public */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		519B42201F72442A00B93D77 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				519B42211F72442A00B93D77 /* HexColors */,
+				519B42231F72442A00B93D77 /* PPTopMostController */,
+				519B42281F72442A00B93D77 /* RMessage */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		519B42211F72442A00B93D77 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				519B42221F72442A00B93D77 /* HexColors.h */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		519B42231F72442A00B93D77 /* PPTopMostController */ = {
+			isa = PBXGroup;
+			children = (
+				519B42241F72442A00B93D77 /* PPTopMostControllerProtocol.h */,
+				519B42251F72442A00B93D77 /* UINavigationController+PPTopMostController.h */,
+				519B42261F72442A00B93D77 /* UITabBarController+PPTopMostController.h */,
+				519B42271F72442A00B93D77 /* UIViewController+PPTopMostController.h */,
+			);
+			path = PPTopMostController;
+			sourceTree = "<group>";
+		};
+		519B42281F72442A00B93D77 /* RMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519B42291F72442A00B93D77 /* RMessage.h */,
+				519B422A1F72442A00B93D77 /* RMessageView.h */,
+			);
+			path = RMessage;
+			sourceTree = "<group>";
+		};
+		519B422B1F72442A00B93D77 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				519B422C1F72442A00B93D77 /* HexColors */,
+				519B422E1F72442A00B93D77 /* PPTopMostController */,
+				519B42331F72442A00B93D77 /* RMessage */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		519B422C1F72442A00B93D77 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				519B422D1F72442A00B93D77 /* HexColors.h */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		519B422E1F72442A00B93D77 /* PPTopMostController */ = {
+			isa = PBXGroup;
+			children = (
+				519B422F1F72442A00B93D77 /* PPTopMostControllerProtocol.h */,
+				519B42301F72442A00B93D77 /* UINavigationController+PPTopMostController.h */,
+				519B42311F72442A00B93D77 /* UITabBarController+PPTopMostController.h */,
+				519B42321F72442A00B93D77 /* UIViewController+PPTopMostController.h */,
+			);
+			path = PPTopMostController;
+			sourceTree = "<group>";
+		};
+		519B42331F72442A00B93D77 /* RMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519B42341F72442A00B93D77 /* RMessage.h */,
+				519B42351F72442A00B93D77 /* RMessageView.h */,
+			);
+			path = RMessage;
+			sourceTree = "<group>";
+		};
+		519B42361F72442A00B93D77 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				519B42371F72442A00B93D77 /* Classes */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		519B42371F72442A00B93D77 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				519B42381F72442A00B93D77 /* HexColors.h */,
+				519B42391F72442A00B93D77 /* HexColors.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		519B423A1F72442A00B93D77 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		519B423D1F72442A00B93D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				519B42811F72442A00B93D77 /* libHexColors.a */,
+				519B42831F72442A00B93D77 /* libPods-BitsoundSampleForSwift.a */,
+				519B42851F72442A00B93D77 /* libPPTopMostController.a */,
+				519B42871F72442A00B93D77 /* libRMessage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		519B423F1F72442A00B93D77 /* PPTopMostController */ = {
+			isa = PBXGroup;
+			children = (
+				519B42401F72442A00B93D77 /* LICENCE */,
+				519B42411F72442A00B93D77 /* PPTopMostController-Files */,
+				519B42491F72442A00B93D77 /* README.md */,
+			);
+			path = PPTopMostController;
+			sourceTree = "<group>";
+		};
+		519B42411F72442A00B93D77 /* PPTopMostController-Files */ = {
+			isa = PBXGroup;
+			children = (
+				519B42421F72442A00B93D77 /* PPTopMostControllerProtocol.h */,
+				519B42431F72442A00B93D77 /* UINavigationController+PPTopMostController.h */,
+				519B42441F72442A00B93D77 /* UINavigationController+PPTopMostController.m */,
+				519B42451F72442A00B93D77 /* UITabBarController+PPTopMostController.h */,
+				519B42461F72442A00B93D77 /* UITabBarController+PPTopMostController.m */,
+				519B42471F72442A00B93D77 /* UIViewController+PPTopMostController.h */,
+				519B42481F72442A00B93D77 /* UIViewController+PPTopMostController.m */,
+			);
+			path = "PPTopMostController-Files";
+			sourceTree = "<group>";
+		};
+		519B424A1F72442A00B93D77 /* RMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519B424B1F72442A00B93D77 /* LICENSE */,
+				519B424C1F72442A00B93D77 /* README.md */,
+				519B424D1F72442A00B93D77 /* RMessage */,
+			);
+			path = RMessage;
+			sourceTree = "<group>";
+		};
+		519B424D1F72442A00B93D77 /* RMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519B424E1F72442A00B93D77 /* Assets */,
+				519B42581F72442A00B93D77 /* Resources */,
+				519B425A1F72442A00B93D77 /* RMessage.h */,
+				519B425B1F72442A00B93D77 /* RMessage.m */,
+				519B425C1F72442A00B93D77 /* RMessageView.h */,
+				519B425D1F72442A00B93D77 /* RMessageView.m */,
+			);
+			path = RMessage;
+			sourceTree = "<group>";
+		};
+		519B424E1F72442A00B93D77 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				519B424F1F72442A00B93D77 /* NotificationBackgroundErrorIcon.png */,
+				519B42501F72442A00B93D77 /* NotificationBackgroundErrorIcon@2x.png */,
+				519B42511F72442A00B93D77 /* NotificationBackgroundSuccessIcon.png */,
+				519B42521F72442A00B93D77 /* NotificationBackgroundSuccessIcon@2x.png */,
+				519B42531F72442A00B93D77 /* NotificationBackgroundWarningIcon.png */,
+				519B42541F72442A00B93D77 /* NotificationBackgroundWarningIcon@2x.png */,
+				519B42551F72442A00B93D77 /* NotificationButtonBackground.png */,
+				519B42561F72442A00B93D77 /* NotificationButtonBackground@2x.png */,
+				519B42571F72442A00B93D77 /* RMessageDefaultDesign.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		519B42581F72442A00B93D77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				519B42591F72442A00B93D77 /* RMessageView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		519B425E1F72442A00B93D77 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				519B425F1F72442A00B93D77 /* HexColors */,
+				519B42631F72442A00B93D77 /* Pods-BitsoundSampleForSwift */,
+				519B426B1F72442A00B93D77 /* PPTopMostController */,
+				519B426F1F72442A00B93D77 /* RMessage */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		519B425F1F72442A00B93D77 /* HexColors */ = {
+			isa = PBXGroup;
+			children = (
+				519B42601F72442A00B93D77 /* HexColors-dummy.m */,
+				519B42611F72442A00B93D77 /* HexColors-prefix.pch */,
+				519B42621F72442A00B93D77 /* HexColors.xcconfig */,
+			);
+			path = HexColors;
+			sourceTree = "<group>";
+		};
+		519B42631F72442A00B93D77 /* Pods-BitsoundSampleForSwift */ = {
+			isa = PBXGroup;
+			children = (
+				519B42641F72442A00B93D77 /* Pods-BitsoundSampleForSwift-acknowledgements.markdown */,
+				519B42651F72442A00B93D77 /* Pods-BitsoundSampleForSwift-acknowledgements.plist */,
+				519B42661F72442A00B93D77 /* Pods-BitsoundSampleForSwift-dummy.m */,
+				519B42671F72442A00B93D77 /* Pods-BitsoundSampleForSwift-frameworks.sh */,
+				519B42681F72442A00B93D77 /* Pods-BitsoundSampleForSwift-resources.sh */,
+				519B42691F72442A00B93D77 /* Pods-BitsoundSampleForSwift.debug.xcconfig */,
+				519B426A1F72442A00B93D77 /* Pods-BitsoundSampleForSwift.release.xcconfig */,
+			);
+			path = "Pods-BitsoundSampleForSwift";
+			sourceTree = "<group>";
+		};
+		519B426B1F72442A00B93D77 /* PPTopMostController */ = {
+			isa = PBXGroup;
+			children = (
+				519B426C1F72442A00B93D77 /* PPTopMostController-dummy.m */,
+				519B426D1F72442A00B93D77 /* PPTopMostController-prefix.pch */,
+				519B426E1F72442A00B93D77 /* PPTopMostController.xcconfig */,
+			);
+			path = PPTopMostController;
+			sourceTree = "<group>";
+		};
+		519B426F1F72442A00B93D77 /* RMessage */ = {
+			isa = PBXGroup;
+			children = (
+				519B42701F72442A00B93D77 /* RMessage-dummy.m */,
+				519B42711F72442A00B93D77 /* RMessage-prefix.pch */,
+				519B42721F72442A00B93D77 /* RMessage.xcconfig */,
+			);
+			path = RMessage;
 			sourceTree = "<group>";
 		};
 		5E3D6826B08AE2A02D25D227 /* Pods */ = {
@@ -197,6 +669,7 @@
 				516609CE1E36059100B2C02B /* Resources */,
 				5165FB3782F4895DCB4B6750 /* [CP] Embed Pods Frameworks */,
 				62B6030616486B9315E203B6 /* [CP] Copy Pods Resources */,
+				51978F531F7244D20092DA24 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +755,16 @@
 			mainGroup = 516609C71E36059100B2C02B;
 			productRefGroup = 516609D11E36059100B2C02B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 519B42131F72442900B93D77 /* Products */;
+					ProjectRef = 519B42121F72442900B93D77 /* BitsoundSampleForSwift.xcodeproj */;
+				},
+				{
+					ProductGroup = 519B423D1F72442A00B93D77 /* Products */;
+					ProjectRef = 519B423C1F72442A00B93D77 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				516609CF1E36059100B2C02B /* BitsoundSample */,
@@ -290,6 +773,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		519B42771F72442A00B93D77 /* BitsoundSampleForSwift.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = BitsoundSampleForSwift.app;
+			remoteRef = 519B42761F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		519B42791F72442A00B93D77 /* BitsoundSampleForSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BitsoundSampleForSwiftTests.xctest;
+			remoteRef = 519B42781F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		519B427B1F72442A00B93D77 /* BitsoundSampleForSwiftUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BitsoundSampleForSwiftUITests.xctest;
+			remoteRef = 519B427A1F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		519B42811F72442A00B93D77 /* libHexColors.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHexColors.a;
+			remoteRef = 519B42801F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		519B42831F72442A00B93D77 /* libPods-BitsoundSampleForSwift.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-BitsoundSampleForSwift.a";
+			remoteRef = 519B42821F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		519B42851F72442A00B93D77 /* libPPTopMostController.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPPTopMostController.a;
+			remoteRef = 519B42841F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		519B42871F72442A00B93D77 /* libRMessage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRMessage.a;
+			remoteRef = 519B42861F72442A00B93D77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		516609CE1E36059100B2C02B /* Resources */ = {
@@ -425,6 +960,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		519B420B1F72442900B93D77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519B420C1F72442900B93D77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		519B420D1F72442900B93D77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				519B420E1F72442900B93D77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -532,6 +1083,7 @@
 					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = BitsoundSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundlly.BitsoundSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -550,6 +1102,7 @@
 					"$(PROJECT_DIR)/../",
 				);
 				INFOPLIST_FILE = BitsoundSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.soundlly.BitsoundSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

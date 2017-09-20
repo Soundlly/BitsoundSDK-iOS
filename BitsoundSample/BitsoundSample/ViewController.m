@@ -32,7 +32,9 @@
 
     // init with app key
 //    [[BitsoundReceiver sharedInstance] initWithAppKey:@"your_app_key"];
-    [[BitsoundReceiver sharedInstance] initWithAppKey:@"75d97ae5-0e2d-4322-82cd-9770d129cd04"];
+//    [[BitsoundReceiver sharedInstance] initWithAppKey:@"75d97ae5-0e2d-4322-82cd-9770d129cd04"];
+    
+    [[BitsoundReceiver sharedInstance] initWithAppKey:@"8fb51470-f709-4d9b-b4a6-b0cd49e606ac"];
     
 
     // receiver set delegate

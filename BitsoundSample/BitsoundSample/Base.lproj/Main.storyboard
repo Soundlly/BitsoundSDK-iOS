@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ldg-oe-Zoy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ldg-oe-Zoy">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-vo-jzG">
-                                <rect key="frame" x="52" y="125" width="272" height="30"/>
+                                <rect key="frame" x="51.5" y="125" width="273" height="30"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <state key="normal" title="startDetectWithContentsAssistant(YES)"/>
                                 <connections>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv6-sl-4Wm">
-                                <rect key="frame" x="54" y="191" width="267" height="30"/>
+                                <rect key="frame" x="53.5" y="191" width="268" height="30"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <state key="normal" title="startDetectWithContentsAssistant(NO)"/>
                                 <connections>
@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxO-Gm-o4V">
-                                <rect key="frame" x="54" y="462" width="97" height="30"/>
+                                <rect key="frame" x="53.5" y="462" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="QA1-Gf-pJG"/>
                                 </constraints>
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E89-QM-vDC">
-                                <rect key="frame" x="224" y="462" width="97" height="30"/>
+                                <rect key="frame" x="223.5" y="462" width="98" height="30"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
                                 <state key="normal" title="stop"/>
                                 <connections>
@@ -114,7 +114,7 @@
             <objects>
                 <navigationController id="ldg-oe-Zoy" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HuZ-Dc-XU8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

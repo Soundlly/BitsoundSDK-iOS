@@ -43,11 +43,8 @@
     // player set delegate
     [BitsoundPlayer sharedInstance].delegate = self;
     
-    // set tag (optional)
-    [[BitsoundReceiver sharedInstance] setTag:@{@"tag1": @"tag_1"}];
-    
     // set UUID (optional)
-    [[BitsoundReceiver sharedInstance] setUUID:@"user_1"];
+    [[BitsoundReceiver sharedInstance] setUserID:@"user_1"];
     
 }
 

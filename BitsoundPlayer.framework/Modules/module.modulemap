@@ -1,6 +1,0 @@
-framework module BitsoundPlayer {
-  umbrella header "BitsoundPlayer.h"
-
-  export *
-  module * { export * }
-}

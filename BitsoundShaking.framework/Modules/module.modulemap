@@ -1,6 +1,0 @@
-framework module BitsoundShaking {
-  umbrella header "BitsoundShaking.h"
-
-  export *
-  module * { export * }
-}

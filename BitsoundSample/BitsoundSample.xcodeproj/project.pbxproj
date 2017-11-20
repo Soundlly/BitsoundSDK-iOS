@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		51282A011FB0608300D93D61 /* BitsoundShaking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512829FE1FB0608300D93D61 /* BitsoundShaking.framework */; };
-		51282A021FB0608300D93D61 /* BitsoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512829FF1FB0608300D93D61 /* BitsoundPlayer.framework */; };
 		51282A031FB0608300D93D61 /* BitsoundReceiver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51282A001FB0608300D93D61 /* BitsoundReceiver.framework */; };
 		51282A041FB0609000D93D61 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 51660A091E36064900B2C02B /* libstdc++.tbd */; };
 		516609D51E36059100B2C02B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609D41E36059100B2C02B /* main.m */; };
@@ -20,6 +19,7 @@
 		516609EE1E36059200B2C02B /* BitsoundSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609ED1E36059200B2C02B /* BitsoundSampleTests.m */; };
 		516609F91E36059200B2C02B /* BitsoundSampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516609F81E36059200B2C02B /* BitsoundSampleUITests.m */; };
 		5172CB8D1E5FD49600923EAF /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5172CB8C1E5FD49600923EAF /* SafariServices.framework */; };
+		51AAD2921FC276BE0007CC5A /* BitsoundPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51AAD2911FC276BE0007CC5A /* BitsoundPlayer.framework */; };
 		51C6FFC41F739E9600EA031F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51978F541F72450C0092DA24 /* AudioToolbox.framework */; };
 		83FE694C2D4A89212F6E2BF2 /* libPods-BitsoundSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */; };
 /* End PBXBuildFile section */
@@ -92,7 +92,6 @@
 
 /* Begin PBXFileReference section */
 		512829FE1FB0608300D93D61 /* BitsoundShaking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundShaking.framework; path = ../BitsoundShaking.framework; sourceTree = "<group>"; };
-		512829FF1FB0608300D93D61 /* BitsoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundPlayer.framework; path = ../BitsoundPlayer.framework; sourceTree = "<group>"; };
 		51282A001FB0608300D93D61 /* BitsoundReceiver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundReceiver.framework; path = ../BitsoundReceiver.framework; sourceTree = "<group>"; };
 		516609D01E36059100B2C02B /* BitsoundSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitsoundSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516609D41E36059100B2C02B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -187,6 +186,7 @@
 		519B42701F72442A00B93D77 /* RMessage-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RMessage-dummy.m"; sourceTree = "<group>"; };
 		519B42711F72442A00B93D77 /* RMessage-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RMessage-prefix.pch"; sourceTree = "<group>"; };
 		519B42721F72442A00B93D77 /* RMessage.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RMessage.xcconfig; sourceTree = "<group>"; };
+		51AAD2911FC276BE0007CC5A /* BitsoundPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BitsoundPlayer.framework; path = ../BitsoundPlayer.framework; sourceTree = "<group>"; };
 		8717A1D0BC43FB4DBC909F35 /* libPods-BitsoundSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitsoundSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A512C02E6B2B3AAFDEBDD0 /* Pods-BitsoundSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSample/Pods-BitsoundSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E8B5A60C321752661AD0180A /* Pods-BitsoundSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitsoundSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitsoundSample/Pods-BitsoundSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,11 +199,11 @@
 			files = (
 				51282A041FB0609000D93D61 /* libstdc++.tbd in Frameworks */,
 				51C6FFC41F739E9600EA031F /* AudioToolbox.framework in Frameworks */,
-				51282A021FB0608300D93D61 /* BitsoundPlayer.framework in Frameworks */,
 				5172CB8D1E5FD49600923EAF /* SafariServices.framework in Frameworks */,
 				51282A031FB0608300D93D61 /* BitsoundReceiver.framework in Frameworks */,
 				51282A011FB0608300D93D61 /* BitsoundShaking.framework in Frameworks */,
 				83FE694C2D4A89212F6E2BF2 /* libPods-BitsoundSample.a in Frameworks */,
+				51AAD2921FC276BE0007CC5A /* BitsoundPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +292,7 @@
 		51660A081E36064800B2C02B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				512829FF1FB0608300D93D61 /* BitsoundPlayer.framework */,
+				51AAD2911FC276BE0007CC5A /* BitsoundPlayer.framework */,
 				51282A001FB0608300D93D61 /* BitsoundReceiver.framework */,
 				512829FE1FB0608300D93D61 /* BitsoundShaking.framework */,
 				51978F541F72450C0092DA24 /* AudioToolbox.framework */,

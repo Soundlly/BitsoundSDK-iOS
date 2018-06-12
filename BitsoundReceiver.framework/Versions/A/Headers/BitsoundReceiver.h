@@ -35,7 +35,8 @@ typedef NS_ENUM(int, BitsoundReceiverDetectResult) {
     BitsoundReceiverDetectSuccess = 0,    // detect success
     BitsoundReceiverDetectMicPermissionDenied = -1,   // mic. permission denied
     BitsoundReceiverDetectAlreadyStarted = -2,    // detect alredy started
-    BitsoundReceiverDetectNotInitialized = -3 // not initialized
+    BitsoundReceiverDetectNotInitialized = -3, // not initialized
+    BitsoundReceiverDetectSDKDisabled = -4 //sdk disabled
 };
 
 /**
@@ -156,6 +157,22 @@ typedef void (^StartDetectBlock)(BitsoundReceiverDetectResult result);
  *
  */
 - (void)setUserID:(nonnull NSString *)userID;
+
+/**
+ *  remote notification 으로 bitsound 처리가 필요한 경우. message받은 후 호출.
+ *  push message 예시
+ *  {
+ *      "aps": {
+ *          "content-available": "1" //background처리 가능. 
+ *      },
+ *      "bitsound" : {
+ *          "v1":{
+ *          }
+ *      }
+ *  }
+ */
+ 
+- (void)didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo;
 
 @end
 

@@ -17,5 +17,5 @@
 @property (nonatomic, strong) NSMutableArray *attributes;
 
 - (NSString *)getStrValue:(NSString *)key;
-
+- (NSString *)toString;
 @end
